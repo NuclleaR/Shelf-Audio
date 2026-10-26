@@ -15,12 +15,6 @@ decode_env_to_file() {
   echo "Success: Written to ${dest_file}"
 }
 
-mkdir -p signing/play
-mkdir -p signing/free
-mkdir -p app/src/play
+mkdir -p signing
 
-decode_env_to_file "PLAY_SIGNING_KEYSTORE" "signing/play/signing.keystore"
-
-decode_env_to_file "GITHUB_SIGNING_KEYSTORE" "signing/free/signing.keystore"
-
-decode_env_to_file "GOOGLE_SERVICES" "app/src/play/google-services.json"
+decode_env_to_file "SIGNING_KEYSTORE" "signing/signing.keystore"
