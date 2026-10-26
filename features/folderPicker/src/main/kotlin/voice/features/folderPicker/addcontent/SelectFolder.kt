@@ -3,7 +3,10 @@ package voice.features.folderPicker.addcontent
 import android.net.Uri
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -27,6 +30,7 @@ internal fun SelectFolder(
   /** Null while connecting a server isn't available. */
   onConnectAudiobookshelf: (() -> Unit)?,
   onFolderPickerCancel: () -> Unit,
+  onSkip: () -> Unit,
   origin: Origin,
   modifier: Modifier = Modifier,
 ) {
@@ -65,6 +69,14 @@ internal fun SelectFolder(
         onNoPicker = { help = FolderHelp.NoPicker },
         onConnectAudiobookshelf = onConnectAudiobookshelf,
       )
+      if (origin == Origin.Onboarding) {
+        TextButton(
+          modifier = Modifier.fillMaxWidth(),
+          onClick = onSkip,
+        ) {
+          Text(stringResource(StringsR.string.folder_add_action_skip))
+        }
+      }
     },
   )
 }
@@ -78,6 +90,7 @@ private fun SelectFolderPreview() {
       onAdd = { _, _ -> },
       onConnectAudiobookshelf = {},
       onFolderPickerCancel = {},
+      onSkip = {},
       origin = Origin.Onboarding,
     )
   }

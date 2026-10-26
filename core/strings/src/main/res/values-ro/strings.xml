@@ -151,6 +151,7 @@
     <string name="folder.add.action.audiobookshelf">Conectează Audiobookshelf</string>
     <string name="folder.add.action.file">Adaugă doar un fișier</string>
     <string name="folder.add.action.folder">Alege un director</string>
+    <string name="folder.add.action.skip">Sari peste deocamdată</string>
     <string name="folder.add.help.computer">Mai ai cărți audio pe calculator? Copiază-le mai întâi pe telefon, de exemplu în directorul Audiobooks.</string>
     <string name="folder.add.help.download">Android nu permite aplicațiilor să deschidă direct directorul Download. Alege un director din interiorul lui.</string>
     <string name="folder.add.help.title">Nu ai găsit cărțile tale audio?</string>

@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Yhdistä Audiobookshelf</string>
     <string name="folder.add.action.file">Lisää sen sijaan yksittäinen tiedosto</string>
     <string name="folder.add.action.folder">Valitse kansio</string>
+    <string name="folder.add.action.skip">Ohita toistaiseksi</string>
     <string name="folder.add.help.computer">Ovatko äänikirjasi vielä tietokoneella? Kopioi ne ensin puhelimeesi, esimerkiksi Audiobooks-kansioon.</string>
     <string name="folder.add.help.download">Android ei salli sovellusten avata suoraan Download-kansiota. Valitse jokin sen sisällä oleva kansio.</string>
     <string name="folder.add.help.title">Etkö löytänyt äänikirjojasi?</string>

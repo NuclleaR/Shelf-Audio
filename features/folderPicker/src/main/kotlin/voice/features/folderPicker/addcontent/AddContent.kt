@@ -46,5 +46,6 @@ fun AddContent(origin: Origin) {
     },
     onFolderPickerCancel = viewModel::onFolderPickerCancel,
     onConnectAudiobookshelf = if (viewModel.canConnectAudiobookshelf) viewModel::connectAudiobookshelf else null,
+    onSkip = viewModel::skip,
   )
 }

@@ -166,6 +166,7 @@
     <string name="folder.add.action.audiobookshelf">ربط Audiobookshelf</string>
     <string name="folder.add.action.file">إضافة ملف واحد بدلًا من ذلك</string>
     <string name="folder.add.action.folder">اختيار مجلد</string>
+    <string name="folder.add.action.skip">تخطي الآن</string>
     <string name="folder.add.help.computer">هل ما زالت كتبك الصوتية على الكمبيوتر؟ يمكنك نسخها إلى هاتفك أولًا، مثلاً إلى مجلد Audiobooks.</string>
     <string name="folder.add.help.download">لا يسمح Android للتطبيقات بفتح مجلد Download نفسه. يمكنك اختيار مجلد بداخله.</string>
     <string name="folder.add.help.title">لم يُعثر على كتبك الصوتية؟</string>

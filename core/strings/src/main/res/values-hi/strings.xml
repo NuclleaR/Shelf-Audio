@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf कनेक्ट करें</string>
     <string name="folder.add.action.file">इसके बजाय एक फ़ाइल जोड़ें</string>
     <string name="folder.add.action.folder">फ़ोल्डर चुनें</string>
+    <string name="folder.add.action.skip">अभी के लिए छोड़ें</string>
     <string name="folder.add.help.computer">ऑडियोबुक अब भी आपके कंप्यूटर पर हैं? पहले उन्हें अपने फ़ोन में कॉपी करें, जैसे Audiobooks फ़ोल्डर में।</string>
     <string name="folder.add.help.download">Android ऐप्स को सीधे Download फ़ोल्डर खोलने नहीं देता। इसके अंदर का कोई फ़ोल्डर चुनें।</string>
     <string name="folder.add.help.title">आपकी ऑडियोबुक नहीं मिलीं?</string>

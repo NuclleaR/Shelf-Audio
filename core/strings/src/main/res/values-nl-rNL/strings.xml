@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf koppelen</string>
     <string name="folder.add.action.file">Liever één los bestand toevoegen</string>
     <string name="folder.add.action.folder">Kies een map</string>
+    <string name="folder.add.action.skip">Voorlopig overslaan</string>
     <string name="folder.add.help.computer">Staan je luisterboeken nog op de computer? Kopieer ze eerst naar je telefoon, bijvoorbeeld naar de map Audiobooks.</string>
     <string name="folder.add.help.download">Android staat niet toe dat apps de map Download zelf openen. Kies een map binnenin.</string>
     <string name="folder.add.help.title">Je luisterboeken niet gevonden?</string>

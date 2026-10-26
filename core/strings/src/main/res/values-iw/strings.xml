@@ -151,6 +151,7 @@
     <string name="folder.add.action.audiobookshelf">חיבור ל-Audiobookshelf</string>
     <string name="folder.add.action.file">הוספת קובץ בודד במקום זאת</string>
     <string name="folder.add.action.folder">בחירת תיקייה</string>
+    <string name="folder.add.action.skip">דילוג בינתיים</string>
     <string name="folder.add.help.computer">הקולספרים עדיין במחשב? העתיקו אותם לטלפון קודם, למשל לתיקיית Audiobooks.</string>
     <string name="folder.add.help.download">ב-Android, אפליקציות לא יכולות לפתוח את תיקיית Download עצמה. בחרו תיקייה שבתוכה.</string>
     <string name="folder.add.help.title">לא נמצאו הקולספרים שלכם?</string>

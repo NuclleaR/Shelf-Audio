@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf verbinden</string>
     <string name="folder.add.action.file">Stattdessen eine einzelne Datei hinzufügen</string>
     <string name="folder.add.action.folder">Ordner auswählen</string>
+    <string name="folder.add.action.skip">Vorerst überspringen</string>
     <string name="folder.add.help.computer">Hörbücher noch auf Deinem Computer? Kopiere sie zuerst auf Dein Handy, zum Beispiel in den Ordner Audiobooks.</string>
     <string name="folder.add.help.download">Android erlaubt Apps nicht, den Ordner Download selbst zu öffnen. Wähle einen Ordner darin.</string>
     <string name="folder.add.help.title">Deine Hörbücher nicht gefunden?</string>

@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf csatlakoztatása</string>
     <string name="folder.add.action.file">Inkább egyetlen fájl hozzáadása</string>
     <string name="folder.add.action.folder">Mappa kiválasztása</string>
+    <string name="folder.add.action.skip">Kihagyás</string>
     <string name="folder.add.help.computer">A hangoskönyvei még a számítógépén vannak? Másolja át őket előbb a telefonjára, például az Audiobooks mappába.</string>
     <string name="folder.add.help.download">Az Android nem engedi, hogy az alkalmazások megnyissák magát a Download mappát. Válasszon egy mappát azon belül.</string>
     <string name="folder.add.help.title">Nem találja a hangoskönyveit?</string>
