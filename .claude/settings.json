@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew *)",
+      "Bash(git *)",
+      "Bash(gh pr *)"
+    ],
+    "ask": [
+      "Bash(git push *--force*)",
+      "Bash(git push * -f*)",
+      "Bash(git push -f*)",
+      "Bash(git push *+*)"
+    ]
+  }
+}
