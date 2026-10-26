@@ -141,6 +141,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf に接続</string>
     <string name="folder.add.action.file">代わりに単一ファイルを追加</string>
     <string name="folder.add.action.folder">フォルダーを選択</string>
+    <string name="folder.add.action.skip">今はスキップ</string>
     <string name="folder.add.help.computer">オーディオブックがまだパソコンに入っていますか？ 先にスマートフォンの Audiobooks フォルダーなどにコピーしてください。</string>
     <string name="folder.add.help.download">Android では、アプリが Download フォルダー自体を開くことはできません。その中のフォルダーを選んでください。</string>
     <string name="folder.add.help.title">オーディオブックが見つかりませんか？</string>

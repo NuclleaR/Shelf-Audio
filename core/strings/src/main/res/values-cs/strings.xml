@@ -156,6 +156,7 @@
     <string name="folder.add.action.audiobookshelf">Připojit Audiobookshelf</string>
     <string name="folder.add.action.file">Přidat místo toho jeden soubor</string>
     <string name="folder.add.action.folder">Vybrat složku</string>
+    <string name="folder.add.action.skip">Zatím přeskočit</string>
     <string name="folder.add.help.computer">Audioknihy jsou stále v počítači? Nejprve je zkopírujte do telefonu, například do složky Audiobooks.</string>
     <string name="folder.add.help.download">Android nedovolí aplikacím otevřít přímo složku Download. Vyberte složku uvnitř ní.</string>
     <string name="folder.add.help.title">Nenašli jste své audioknihy?</string>

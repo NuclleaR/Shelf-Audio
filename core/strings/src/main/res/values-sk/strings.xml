@@ -156,6 +156,7 @@
     <string name="folder.add.action.audiobookshelf">Pripojiť Audiobookshelf</string>
     <string name="folder.add.action.file">Radšej pridať jeden súbor</string>
     <string name="folder.add.action.folder">Vybrať priečinok</string>
+    <string name="folder.add.action.skip">Zatiaľ preskočiť</string>
     <string name="folder.add.help.computer">Máte zvukové knihy ešte v počítači? Najprv ich skopírujte do telefónu, napríklad do priečinka Audiobooks.</string>
     <string name="folder.add.help.download">Android nedovoľuje aplikáciám otvoriť priamo priečinok Download. Vyberte priečinok vo vnútri neho.</string>
     <string name="folder.add.help.title">Nenašli ste svoje zvukové knihy?</string>

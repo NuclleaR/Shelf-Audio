@@ -151,6 +151,7 @@
     <string name="folder.add.action.audiobookshelf">Conectar Audiobookshelf</string>
     <string name="folder.add.action.file">Agregar un solo archivo en su lugar</string>
     <string name="folder.add.action.folder">Elegir una carpeta</string>
+    <string name="folder.add.action.skip">Omitir por ahora</string>
     <string name="folder.add.help.computer">¿Todavía tienes audiolibros en tu computadora? Cópialos primero en tu teléfono, por ejemplo en la carpeta Audiobooks.</string>
     <string name="folder.add.help.download">Android no permite que las aplicaciones abran la carpeta Download directamente. Elige una carpeta dentro de ella.</string>
     <string name="folder.add.help.title">¿No encontraste tus audiolibros?</string>

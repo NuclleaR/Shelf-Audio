@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Anslut Audiobookshelf</string>
     <string name="folder.add.action.file">Lägg till en enskild fil i stället</string>
     <string name="folder.add.action.folder">Välj en mapp</string>
+    <string name="folder.add.action.skip">Hoppa över tills vidare</string>
     <string name="folder.add.help.computer">Har du fortfarande ljudböcker på datorn? Kopiera dem till telefonen först, till exempel till mappen Audiobooks.</string>
     <string name="folder.add.help.download">Android tillåter inte att appar öppnar själva mappen Download. Välj en mapp inuti den.</string>
     <string name="folder.add.help.title">Hittade du inte dina ljudböcker?</string>

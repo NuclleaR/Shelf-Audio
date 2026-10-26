@@ -156,6 +156,7 @@
     <string name="folder.add.action.audiobookshelf">Подключить Audiobookshelf</string>
     <string name="folder.add.action.file">Добавить один файл вместо папки</string>
     <string name="folder.add.action.folder">Выбрать папку</string>
+    <string name="folder.add.action.skip">Пропустить пока</string>
     <string name="folder.add.help.computer">Аудиокниги всё ещё на компьютере? Сначала скопируйте их на телефон, например в папку Audiobooks.</string>
     <string name="folder.add.help.download">Android не позволяет приложениям открывать саму папку Download. Выберите папку внутри неё.</string>
     <string name="folder.add.help.title">Не нашли свои аудиокниги?</string>

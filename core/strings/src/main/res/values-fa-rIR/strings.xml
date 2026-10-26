@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">اتصال به Audiobookshelf</string>
     <string name="folder.add.action.file">افزودن یک فایل به‌جای پوشه</string>
     <string name="folder.add.action.folder">انتخاب پوشه</string>
+    <string name="folder.add.action.skip">فعلاً رد شدن</string>
     <string name="folder.add.help.computer">کتاب‌های صوتی هنوز روی کامپیوترتان هستند؟ ابتدا آن‌ها را به گوشی‌تان کپی کنید، مثلاً به پوشه‌ی Audiobooks.</string>
     <string name="folder.add.help.download">در Android، برنامه‌ها نمی‌توانند خود پوشه‌ی Download را باز کنند. پوشه‌ای داخل آن انتخاب کنید.</string>
     <string name="folder.add.help.title">کتاب‌های صوتی خود را پیدا نکردید؟</string>

@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Audiobookshelf\'e bağlan</string>
     <string name="folder.add.action.file">Bunun yerine tek bir dosya ekle</string>
     <string name="folder.add.action.folder">Klasör seç</string>
+    <string name="folder.add.action.skip">Şimdilik atla</string>
     <string name="folder.add.help.computer">Sesli kitaplarınız hâlâ bilgisayarınızda mı? Önce onları telefonunuza kopyalayın, örneğin Audiobooks klasörüne.</string>
     <string name="folder.add.help.download">Android, uygulamaların Download klasörünü doğrudan açmasına izin vermez. İçindeki bir klasörü seçin.</string>
     <string name="folder.add.help.title">Sesli kitaplarınızı bulamadınız mı?</string>

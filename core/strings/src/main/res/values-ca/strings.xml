@@ -151,6 +151,7 @@
     <string name="folder.add.action.audiobookshelf">Connecta Audiobookshelf</string>
     <string name="folder.add.action.file">O afegeix un sol fitxer</string>
     <string name="folder.add.action.folder">Tria una carpeta</string>
+    <string name="folder.add.action.skip">Omet de moment</string>
     <string name="folder.add.help.computer">Encara teniu audiollibres a l\'ordinador? Copieu-los primer al vostre telèfon, per exemple a la carpeta Audiobooks.</string>
     <string name="folder.add.help.download">Android no deixa que les aplicacions obrin directament la carpeta Download. Trieu una carpeta del seu interior.</string>
     <string name="folder.add.help.title">No heu trobat els vostres audiollibres?</string>

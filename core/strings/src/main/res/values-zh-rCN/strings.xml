@@ -141,6 +141,7 @@
     <string name="folder.add.action.audiobookshelf">连接 Audiobookshelf</string>
     <string name="folder.add.action.file">改为添加单个文件</string>
     <string name="folder.add.action.folder">选择文件夹</string>
+    <string name="folder.add.action.skip">暂时跳过</string>
     <string name="folder.add.help.computer">有声书还在电脑上？请先将它们复制到手机，例如复制到 Audiobooks 文件夹中。</string>
     <string name="folder.add.help.download">Android 不允许应用直接打开 Download 文件夹，请选择其中的一个文件夹。</string>
     <string name="folder.add.help.title">未找到您的有声书？</string>

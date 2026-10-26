@@ -84,6 +84,10 @@ class AddContentViewModel(
     navigator.goBack()
   }
 
+  internal fun skip() {
+    navigator.setRoot(Destination.BookOverview)
+  }
+
   @AssistedFactory
   interface Factory {
     fun create(origin: Origin): AddContentViewModel

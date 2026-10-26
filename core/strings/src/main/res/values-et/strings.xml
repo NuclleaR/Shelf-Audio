@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Ühenda Audiobookshelf</string>
     <string name="folder.add.action.file">Lisa hoopis üksik fail</string>
     <string name="folder.add.action.folder">Vali kaust</string>
+    <string name="folder.add.action.skip">Jäta praegu vahele</string>
     <string name="folder.add.help.computer">Kas sinu heliraamatud on veel arvutis? Kopeeri need kõigepealt telefoni, näiteks kausta Audiobooks.</string>
     <string name="folder.add.help.download">Android ei luba rakendustel avada kausta Download ennast. Vali kaust selle seest.</string>
     <string name="folder.add.help.title">Ei leidnud oma heliraamatuid?</string>

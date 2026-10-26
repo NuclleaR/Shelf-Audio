@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Поврзи го Audiobookshelf</string>
     <string name="folder.add.action.file">Наместо тоа, додај една датотека</string>
     <string name="folder.add.action.folder">Избери фолдер</string>
+    <string name="folder.add.action.skip">Прескокни засега</string>
     <string name="folder.add.help.computer">Вашите аудио книги сè уште се на компјутерот? Прво копирајте ги на телефонот, на пример во фолдерот Audiobooks.</string>
     <string name="folder.add.help.download">Android не дозволува апликациите сами да го отвораат фолдерот Download. Изберете фолдер во него.</string>
     <string name="folder.add.help.title">Не ги најдовте вашите аудио книги?</string>

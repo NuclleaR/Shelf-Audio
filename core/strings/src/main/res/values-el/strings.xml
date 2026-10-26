@@ -146,6 +146,7 @@
     <string name="folder.add.action.audiobookshelf">Σύνδεση με το Audiobookshelf</string>
     <string name="folder.add.action.file">Προσθήκη μεμονωμένου αρχείου</string>
     <string name="folder.add.action.folder">Επιλογή φακέλου</string>
+    <string name="folder.add.action.skip">Παράλειψη προς το παρόν</string>
     <string name="folder.add.help.computer">Τα ηχητικά βιβλία είναι ακόμα στον υπολογιστή σας; Αντιγράψτε τα πρώτα στο τηλέφωνό σας, για παράδειγμα στον φάκελο Audiobooks.</string>
     <string name="folder.add.help.download">Το Android δεν επιτρέπει στις εφαρμογές να ανοίγουν απευθείας τον φάκελο Download. Επιλέξτε έναν φάκελο μέσα σε αυτόν.</string>
     <string name="folder.add.help.title">Δεν βρήκατε τα ηχητικά σας βιβλία;</string>

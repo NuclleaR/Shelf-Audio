@@ -151,6 +151,7 @@
     <string name="folder.add.action.audiobookshelf">Connecter Audiobookshelf</string>
     <string name="folder.add.action.file">Ajouter plutôt un seul fichier</string>
     <string name="folder.add.action.folder">Choisir un dossier</string>
+    <string name="folder.add.action.skip">Passer pour l\'instant</string>
     <string name="folder.add.help.computer">Vos livres audio sont encore sur votre ordinateur ? Copiez-les d\'abord sur votre téléphone, par exemple dans le dossier Audiobooks.</string>
     <string name="folder.add.help.download">Android ne permet pas aux applications d\'ouvrir directement le dossier Download. Choisissez un dossier à l\'intérieur.</string>
     <string name="folder.add.help.title">Vous n\'avez pas trouvé vos livres audio ?</string>
