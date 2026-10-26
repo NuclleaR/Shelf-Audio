@@ -400,6 +400,8 @@
     <string name="settings.playback.auto_rewind.title">Rebobina automàticament</string>
     <string name="settings.playback.lock_screen_slider.summary">Moveu-vos pel capítol des de la pantalla de bloqueig i la notificació. Desactiveu-ho perquè un toc sense voler no us faci perdre per on anàveu.</string>
     <string name="settings.playback.lock_screen_slider.title">Barra a la pantalla de bloqueig</string>
+    <string name="settings.playback.next_book.summary">Quan s\'acaba un llibre, comença el següent per títol.</string>
+    <string name="settings.playback.next_book.title">Reprodueix el llibre següent</string>
     <string name="settings.playback.seek_time.summary">Quant salten el rebobinat i l\'avançament ràpid</string>
     <string name="settings.playback.seek_time.title">Durada del salt</string>
     <string name="settings.subtitle">Deixeu Voice al vostre gust</string>

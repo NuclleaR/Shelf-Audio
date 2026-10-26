@@ -34,6 +34,7 @@ import voice.core.documentfile.CachedDocumentFile
 import voice.core.featureflag.MemoryFeatureFlag
 import voice.core.kioskmode.KioskModeDemoData
 import voice.core.kioskmode.KioskModeFeatureFlag
+import voice.core.playback.AutoPlayNextBookStore
 import voice.core.playback.AutoRewindAmountStore
 import voice.core.playback.LockScreenSliderStore
 import voice.core.playback.SeekTimeStore
@@ -75,6 +76,7 @@ class SettingsViewModelTest {
   private val autoRewindAmountStore = MemoryDataStore(10)
   private val seekTimeStore = MemoryDataStore(30)
   private val lockScreenSliderStore = MemoryDataStore(true)
+  private val autoPlayNextBookStore = MemoryDataStore(false)
   private val gridModeStore = MemoryDataStore(GridMode.GRID)
   private val sleepTimerPreferenceStore = MemoryDataStore(SleepTimerPreference.Default)
   private val analyticsConsentStore = MemoryDataStore(false)
@@ -114,6 +116,7 @@ class SettingsViewModelTest {
     autoRewindAmountStore = AutoRewindAmountStore(autoRewindAmountStore),
     seekTimeStore = SeekTimeStore(seekTimeStore),
     lockScreenSliderStore = LockScreenSliderStore(lockScreenSliderStore),
+    autoPlayNextBookStore = AutoPlayNextBookStore(autoPlayNextBookStore),
     navigator = navigator,
     appInfoProvider = appInfoProvider,
     gridModeStore = GridModeStore(gridModeStore),
@@ -486,6 +489,19 @@ class SettingsViewModelTest {
 
       viewModel.toggleLockScreenSlider()
       assertTrue(awaitItem().lockScreenSlider)
+    }
+  }
+
+  @Test
+  fun `playing the next book can be turned on`() = scope.runTest {
+    backgroundScope.launchMolecule(RecompositionMode.Immediate) {
+      viewModel.viewState()
+    }.filterNotNull().test {
+      assertFalse(awaitItem().autoPlayNextBook)
+
+      viewModel.toggleAutoPlayNextBook()
+      assertTrue(awaitItem().autoPlayNextBook)
+      assertTrue(autoPlayNextBookStore.data.first())
     }
   }
 

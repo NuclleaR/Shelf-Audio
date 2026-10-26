@@ -418,6 +418,8 @@
     <string name="settings.playback.auto_rewind.title">Автоперемотка назад</string>
     <string name="settings.playback.lock_screen_slider.summary">Перематывайте главу с экрана блокировки и из уведомления. Отключите, чтобы случайное касание не уводило вас с места, где вы остановились.</string>
     <string name="settings.playback.lock_screen_slider.title">Ползунок на экране блокировки</string>
+    <string name="settings.playback.next_book.summary">Когда книга закончится, начнётся следующая по названию.</string>
+    <string name="settings.playback.next_book.title">Воспроизводить следующую книгу</string>
     <string name="settings.playback.seek_time.summary">Насколько далеко перематывают кнопки назад и вперёд</string>
     <string name="settings.playback.seek_time.title">Интервал перемотки</string>
     <string name="settings.subtitle">Сделайте Voice своим</string>

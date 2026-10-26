@@ -666,6 +666,10 @@
     <string name="settings.playback.lock_screen_slider.summary">Drag through the chapter from the lock screen and notification. Turn it off so a stray touch can\'t lose your place.</string>
     <!-- Title for the setting that lets the listener drag the progress slider in the media notification and on the lock screen. -->
     <string name="settings.playback.lock_screen_slider.title">Lock screen slider</string>
+    <!-- Summary of the switch in the listening settings that starts the next book when one ends. The next book is the next one in alphabetical order of the book titles, not the order of the library. -->
+    <string name="settings.playback.next_book.summary">When a book ends, the next one by title starts.</string>
+    <!-- Title of the switch in the listening settings that starts the next book when one ends. -->
+    <string name="settings.playback.next_book.title">Play the next book</string>
     <!-- Explains the skip amount setting. -->
     <string name="settings.playback.seek_time.summary">How far rewind and fast forward jump</string>
     <!-- Title for the setting that controls skip-forward and rewind duration. -->

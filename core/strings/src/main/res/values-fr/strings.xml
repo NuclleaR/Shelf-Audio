@@ -400,6 +400,8 @@
     <string name="settings.playback.auto_rewind.title">Rembobinage automatique</string>
     <string name="settings.playback.lock_screen_slider.summary">Parcourez le chapitre depuis l\'écran de verrouillage et la notification. Désactivez-le pour qu\'un effleurement accidentel ne vous éloigne pas de là où vous en étiez.</string>
     <string name="settings.playback.lock_screen_slider.title">Curseur sur l\'écran de verrouillage</string>
+    <string name="settings.playback.next_book.summary">Quand un livre se termine, le suivant par titre commence.</string>
+    <string name="settings.playback.next_book.title">Lire le livre suivant</string>
     <string name="settings.playback.seek_time.summary">De combien le retour et l\'avance rapide sautent</string>
     <string name="settings.playback.seek_time.title">Durée du saut</string>
     <string name="settings.subtitle">Faites de Voice le vôtre</string>
