@@ -1,0 +1,45 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/build_setup
+
+      - name: Setup Signing
+        env:
+          SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
+        run: ./scripts/ci_signing_setup.sh
+
+      - name: Build APK and AAB
+        env:
+          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
+          SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: |
+          ./gradlew :app:assembleFreeRelease :app:bundleFreeRelease \
+            -Pvoice.versionName="1.0.${{ github.run_number }}" \
+            -Pvoice.versionCode="${{ github.run_number }}" \
+            -Pandroid.injected.signing.store.file="$PWD/signing/signing.keystore" \
+            -Pandroid.injected.signing.store.password="$SIGNING_STORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$SIGNING_KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$SIGNING_KEY_PASSWORD"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: shelf-audio-1.0.${{ github.run_number }}
+          path: |
+            app/build/outputs/apk/free/release/app-free-release.apk
+            app/build/outputs/bundle/freeRelease/app-free-release.aab
+          if-no-files-found: error

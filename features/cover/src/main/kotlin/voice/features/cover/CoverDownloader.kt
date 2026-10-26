@@ -1,0 +1,71 @@
+package voice.features.cover
+
+import android.content.Context
+import android.graphics.BitmapFactory
+import dev.zacsweers.metro.Inject
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.coroutines.executeAsync
+import okio.sink
+import voice.core.logging.api.Logger
+import java.io.File
+import java.io.IOException
+import kotlin.uuid.Uuid
+
+@Inject
+class CoverDownloader(
+  private val client: OkHttpClient,
+  private val context: Context,
+) {
+
+  internal suspend fun download(url: String): File? {
+    val tempFolder = File(context.cacheDir, "coverDownload")
+      .apply {
+        deleteRecursively()
+        mkdirs()
+      }
+    val request = Request.Builder()
+      .url(url)
+      .build()
+    val response = try {
+      client.newCall(request).executeAsync()
+    } catch (e: IOException) {
+      Logger.w(e, "Cover download failed")
+      return null
+    }
+    return response.use {
+      if (!response.isSuccessful) {
+        Logger.w("Cover download failed with HTTP ${response.code}")
+        return null
+      }
+      withContext(Dispatchers.IO) {
+        try {
+          // select a random name so on updating this, the old image is not cached
+          val file = File(tempFolder, Uuid.random().toString())
+          file.sink().use { sink ->
+            response.body.source().readAll(sink)
+          }
+          // some image urls lead to a web page instead
+          if (file.isImage()) {
+            file
+          } else {
+            Logger.w("Downloaded cover is no image (${response.body.contentType()})")
+            file.delete()
+            null
+          }
+        } catch (e: IOException) {
+          Logger.w(e, "Can't save the downloaded cover")
+          null
+        }
+      }
+    }
+  }
+}
+
+private fun File.isImage(): Boolean {
+  val options = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+  BitmapFactory.decodeFile(path, options)
+  return options.outWidth > 0 && options.outHeight > 0
+}
