@@ -99,6 +99,8 @@ internal fun ListeningSection(
   onAutoRewindStep: (Int) -> Unit,
   lockScreenSlider: Boolean,
   onLockScreenSliderToggle: () -> Unit,
+  autoPlayNextBook: Boolean,
+  onAutoPlayNextBookToggle: () -> Unit,
   modifier: Modifier = Modifier,
 ) {
   SettingsIsland(
@@ -141,6 +143,20 @@ internal fun ListeningSection(
         )
       },
       summary = { Text(stringResource(StringsR.string.settings_playback_lock_screen_slider_summary)) },
+    )
+    IslandSwitchRow(
+      title = stringResource(StringsR.string.settings_playback_next_book_title),
+      checked = autoPlayNextBook,
+      onCheckedChange = { onAutoPlayNextBookToggle() },
+      leading = {
+        ShapedIcon(
+          icon = VoiceIcons.SkipNext,
+          shape = MaterialShapes.Clover4Leaf,
+          containerColor = MaterialTheme.colorScheme.secondary,
+          contentColor = MaterialTheme.colorScheme.onSecondary,
+        )
+      },
+      summary = { Text(stringResource(StringsR.string.settings_playback_next_book_summary)) },
     )
   }
 }

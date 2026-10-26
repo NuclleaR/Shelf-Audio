@@ -417,6 +417,8 @@
     <string name="settings.playback.auto_rewind.title">Автовідмотування назад</string>
     <string name="settings.playback.lock_screen_slider.summary">Перемотуйте розділ з екрана блокування та сповіщення. Вимкніть, щоб випадковий дотик не відвів вас від місця, де ви зупинилися.</string>
     <string name="settings.playback.lock_screen_slider.title">Повзунок на екрані блокування</string>
+    <string name="settings.playback.next_book.summary">Коли книга закінчується, починає грати наступна за назвою.</string>
+    <string name="settings.playback.next_book.title">Грати наступну книгу</string>
     <string name="settings.playback.seek_time.summary">Наскільки далеко перемотують кнопки назад і вперед</string>
     <string name="settings.playback.seek_time.title">Інтервал перемотування</string>
     <string name="settings.subtitle">Зробіть Voice своїм</string>

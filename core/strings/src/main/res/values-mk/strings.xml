@@ -381,6 +381,8 @@
     <string name="settings.playback.auto_rewind.title">Автоматско враќање назад</string>
     <string name="settings.playback.lock_screen_slider.summary">Премотувајте низ поглавјето од заклучениот екран и известувањето. Исклучете го за да не го изгубите местото со случаен допир.</string>
     <string name="settings.playback.lock_screen_slider.title">Лизгач на заклучениот екран</string>
+    <string name="settings.playback.next_book.summary">Кога ќе заврши една книга, започнува следната по наслов.</string>
+    <string name="settings.playback.next_book.title">Пушти ја следната книга</string>
     <string name="settings.playback.seek_time.summary">Колку далеку скокаат враќањето и брзото премотување</string>
     <string name="settings.playback.seek_time.title">Чекор на премотување</string>
     <string name="settings.subtitle">Направете го Voice свој</string>

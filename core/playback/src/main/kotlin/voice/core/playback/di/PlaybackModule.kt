@@ -26,6 +26,7 @@ import voice.core.data.AUDIOBOOKSHELF_SCHEME
 import voice.core.featureflag.FeatureFlag
 import voice.core.logging.api.Logger
 import voice.core.playback.Media3AudioOffloadFeatureFlag
+import voice.core.playback.NextBookAutoPlay
 import voice.core.playback.history.AutomaticPauseRecorder
 import voice.core.playback.history.CommandSourceResolver
 import voice.core.playback.misc.VolumeGain
@@ -70,6 +71,7 @@ object PlaybackModule {
     durationInconsistenciesUpdater: DurationInconsistenciesUpdater,
     automaticPauseRecorder: AutomaticPauseRecorder,
     listeningSessionRecorder: ListeningSessionRecorder,
+    nextBookAutoPlay: NextBookAutoPlay,
     media3AudioOffloadFeatureFlag: Media3AudioOffloadFeatureFlag,
   ): ExoPlayer {
     val audioAttributes = AudioAttributes.Builder()
@@ -101,6 +103,7 @@ object PlaybackModule {
         durationInconsistenciesUpdater.attachTo(player)
         automaticPauseRecorder.attachTo(player)
         listeningSessionRecorder.attachTo(player)
+        nextBookAutoPlay.attachTo(player)
         player.onAudioSessionIdChanged {
           volumeGain.audioSessionId = it
         }

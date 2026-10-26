@@ -453,6 +453,8 @@
     <string name="settings.playback.auto_rewind.title">إرجاع آلي</string>
     <string name="settings.playback.lock_screen_slider.summary">يتيح التنقل داخل الفصل بالسحب من شاشة القفل والإشعار. عند إيقافه، لن تُضيّع لمسة عابرة موضعك.</string>
     <string name="settings.playback.lock_screen_slider.title">شريط التقدم في شاشة القفل</string>
+    <string name="settings.playback.next_book.summary">عند انتهاء كتاب، يبدأ الكتاب التالي حسب العنوان.</string>
+    <string name="settings.playback.next_book.title">تشغيل الكتاب التالي</string>
     <string name="settings.playback.seek_time.summary">مقدار القفز عند الإرجاع والتقديم السريع</string>
     <string name="settings.playback.seek_time.title">مقدار القفز</string>
     <string name="settings.subtitle">تطبيق Voice على طريقتك</string>

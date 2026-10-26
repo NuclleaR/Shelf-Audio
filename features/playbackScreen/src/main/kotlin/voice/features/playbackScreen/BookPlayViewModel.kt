@@ -1,6 +1,7 @@
 package voice.features.playbackScreen
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -11,6 +12,7 @@ import dev.zacsweers.metro.AssistedFactory
 import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.dropWhile
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -103,6 +105,16 @@ class BookPlayViewModel(
   fun viewState(): BookPlayViewState? {
     val kioskMode = remember { kioskModeFeatureFlag.get() }
     if (kioskMode) return kioskModeViewState()
+
+    // playback can move on to another book while this one is shown, as when the next book starts at its end
+    LaunchedEffect(bookId) {
+      val otherBookId = currentBookStoreId.data
+        .dropWhile { it != bookId }
+        .filterNotNull()
+        .first { it != bookId }
+      navigator.goTo(Destination.Playback(otherBookId))
+      navigator.remove(Destination.Playback(bookId))
+    }
 
     val defaultSpeed = remember { lastPlaybackSpeedStore.data }.collectAsState(initial = null).value
     val persistedBook = remember(bookId) {
