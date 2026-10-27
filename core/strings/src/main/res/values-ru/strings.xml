@@ -419,6 +419,8 @@
     <string name="settings.playback.lock_screen_slider.title">Ползунок на экране блокировки</string>
     <string name="settings.playback.next_book.summary">Когда книга закончится, начнётся следующая по названию.</string>
     <string name="settings.playback.next_book.title">Воспроизводить следующую книгу</string>
+    <string name="settings.playback.play_on_tap.summary">Нажатие на книгу сразу запускает её с места, где вы остановились. Прослушанная книга начнётся сначала.</string>
+    <string name="settings.playback.play_on_tap.title">Воспроизводить по нажатию</string>
     <string name="settings.playback.seek_time.summary">Насколько далеко перематывают кнопки назад и вперёд</string>
     <string name="settings.playback.seek_time.title">Интервал перемотки</string>
     <string name="settings.subtitle">Сделайте Shelf Audio своим</string>

@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">نوار پیشرفت در صفحه قفل</string>
     <string name="settings.playback.next_book.summary">وقتی کتابی تمام می‌شود، کتاب بعدی به ترتیب عنوان شروع می‌شود.</string>
     <string name="settings.playback.next_book.title">پخش کتاب بعدی</string>
+    <string name="settings.playback.play_on_tap.summary">با لمس یک کتاب، پخش آن فوراً از جایی که مانده بودید شروع می‌شود. کتاب تمام‌شده از اول شروع می‌شود.</string>
+    <string name="settings.playback.play_on_tap.title">پخش با لمس</string>
     <string name="settings.playback.seek_time.summary">میزان پرش عقب و جلو بردن سریع</string>
     <string name="settings.playback.seek_time.title">میزان پرش</string>
     <string name="settings.subtitle">Shelf Audio را مال خودتان کنید</string>

@@ -69,6 +69,7 @@ class BookOverviewViewModel(
   private val audiobookFolders: AudiobookFolders,
   private val emptyLibraryTracker: EmptyLibraryTracker,
   private val survey: Survey,
+  private val playOnBookTap: PlayOnBookTap,
 ) {
 
   private val scope = MainScope(dispatcherProvider)
@@ -224,7 +225,10 @@ class BookOverviewViewModel(
   }
 
   fun onBookClick(id: BookId) {
-    navigator.goTo(Destination.Playback(id))
+    scope.launch {
+      playOnBookTap.onBookTap(id)
+      navigator.goTo(Destination.Playback(id))
+    }
   }
 
   fun onBookLongClick(id: BookId) {

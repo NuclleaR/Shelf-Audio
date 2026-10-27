@@ -455,6 +455,8 @@
     <string name="settings.playback.lock_screen_slider.title">شريط التقدم في شاشة القفل</string>
     <string name="settings.playback.next_book.summary">عند انتهاء كتاب، يبدأ الكتاب التالي حسب العنوان.</string>
     <string name="settings.playback.next_book.title">تشغيل الكتاب التالي</string>
+    <string name="settings.playback.play_on_tap.summary">يبدأ تشغيل الكتاب فور لمسه، من الموضع الذي توقّف عنده. ويبدأ الكتاب المنتهي من جديد.</string>
+    <string name="settings.playback.play_on_tap.title">التشغيل بلمسة</string>
     <string name="settings.playback.seek_time.summary">مقدار القفز عند الإرجاع والتقديم السريع</string>
     <string name="settings.playback.seek_time.title">مقدار القفز</string>
     <string name="settings.subtitle">تطبيق Shelf Audio على طريقتك</string>

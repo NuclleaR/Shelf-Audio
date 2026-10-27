@@ -8,6 +8,7 @@ import app.cash.turbine.test
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.coVerifyOrder
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -66,6 +67,7 @@ class BookOverviewViewModelTest {
     every { withoutAccess() } returns flowOf(emptyMap())
   }
   private val emptyLibraryTracker = mockk<EmptyLibraryTracker>(relaxUnitFun = true)
+  private val playOnBookTap = mockk<PlayOnBookTap>(relaxUnitFun = true)
 
   @Test
   fun `state updates the current book item from live playback`() = runTest {
@@ -103,6 +105,7 @@ class BookOverviewViewModelTest {
       audiobookFolders = audiobookFolders,
       emptyLibraryTracker = emptyLibraryTracker,
       survey = survey(),
+      playOnBookTap = playOnBookTap,
     )
 
     backgroundScope.launchMolecule(RecompositionMode.Immediate) {
@@ -166,6 +169,7 @@ class BookOverviewViewModelTest {
       audiobookFolders = audiobookFolders,
       emptyLibraryTracker = emptyLibraryTracker,
       survey = survey(),
+      playOnBookTap = playOnBookTap,
     )
 
     backgroundScope.launchMolecule(RecompositionMode.Immediate) {
@@ -447,6 +451,20 @@ class BookOverviewViewModelTest {
   }
 
   @Test
+  fun `book click opens the book once it may have started playing`() = runTest {
+    val navigator = mockk<Navigator>(relaxed = true)
+    val book = book()
+    val viewModel = viewModel(navigator = navigator)
+
+    viewModel.onBookClick(book.id)
+
+    coVerifyOrder {
+      playOnBookTap.onBookTap(book.id)
+      navigator.goTo(Destination.Playback(book.id))
+    }
+  }
+
+  @Test
   fun `search click opens the search`() = runTest {
     val navigator = mockk<Navigator>(relaxed = true)
     val viewModel = viewModel(navigator = navigator)
@@ -501,6 +519,7 @@ class BookOverviewViewModelTest {
       audiobookFolders = audiobookFolders,
       emptyLibraryTracker = emptyLibraryTracker,
       survey = survey,
+      playOnBookTap = playOnBookTap,
     )
   }
 

@@ -27,6 +27,7 @@ import voice.core.kioskmode.KioskModeFeatureFlag
 import voice.core.playback.AutoPlayNextBookStore
 import voice.core.playback.AutoRewindAmountStore
 import voice.core.playback.LockScreenSliderStore
+import voice.core.playback.PlayOnBookTapStore
 import voice.core.playback.SeekTimeStore
 import voice.core.sleeptimer.SleepTimerPreference
 import voice.core.sleeptimer.SleepTimerPreferenceStore
@@ -57,6 +58,7 @@ class SettingsViewModel(
   private val autoRewindAmountStore: AutoRewindAmountStore,
   private val seekTimeStore: SeekTimeStore,
   private val lockScreenSliderStore: LockScreenSliderStore,
+  private val playOnBookTapStore: PlayOnBookTapStore,
   private val autoPlayNextBookStore: AutoPlayNextBookStore,
   private val navigator: Navigator,
   private val appInfoProvider: AppInfoProvider,
@@ -94,6 +96,7 @@ class SettingsViewModel(
     val autoRewindAmount = remember { autoRewindAmountStore.data }.collectAsState(initial = null).value
     val seekTime = remember { seekTimeStore.data }.collectAsState(initial = null).value
     val lockScreenSlider = remember { lockScreenSliderStore.data }.collectAsState(initial = null).value
+    val playOnBookTap = remember { playOnBookTapStore.data }.collectAsState(initial = null).value
     val autoPlayNextBook = remember { autoPlayNextBookStore.data }.collectAsState(initial = null).value
     val gridMode = remember { gridModeStore.data }.collectAsState(initial = null).value
     val autoSleepTimer = remember { sleepTimerPreferenceStore.data }.collectAsState(initial = null).value
@@ -120,6 +123,7 @@ class SettingsViewModel(
       autoRewindAmount == null ||
       seekTime == null ||
       lockScreenSlider == null ||
+      playOnBookTap == null ||
       autoPlayNextBook == null ||
       gridMode == null ||
       autoSleepTimer == null ||
@@ -143,6 +147,7 @@ class SettingsViewModel(
       seekTimeInSeconds = seekTime,
       autoRewindInSeconds = autoRewindAmount,
       lockScreenSlider = lockScreenSlider,
+      playOnBookTap = playOnBookTap,
       autoPlayNextBook = autoPlayNextBook,
       appVersion = appInfoProvider.versionName,
       useGrid = when (gridMode) {
@@ -256,6 +261,12 @@ class SettingsViewModel(
   override fun toggleLockScreenSlider() {
     mainScope.launch {
       lockScreenSliderStore.updateData { !it }
+    }
+  }
+
+  override fun togglePlayOnBookTap() {
+    mainScope.launch {
+      playOnBookTapStore.updateData { !it }
     }
   }
 

@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Regler auf dem Sperrbildschirm</string>
     <string name="settings.playback.next_book.summary">Wenn ein Buch endet, startet das nächste nach Titel.</string>
     <string name="settings.playback.next_book.title">Nächstes Buch abspielen</string>
+    <string name="settings.playback.play_on_tap.summary">Tippst Du auf ein Buch, spielt es sofort dort weiter, wo Du aufgehört hast. Ein beendetes Buch beginnt von vorn.</string>
+    <string name="settings.playback.play_on_tap.title">Beim Antippen abspielen</string>
     <string name="settings.playback.seek_time.summary">Wie weit Zurück- und Vorspulen springen</string>
     <string name="settings.playback.seek_time.title">Vor- und zurückspulen</string>
     <string name="settings.subtitle">Mach Shelf Audio zu Deinem</string>

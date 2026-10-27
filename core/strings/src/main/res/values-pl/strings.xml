@@ -419,6 +419,8 @@
     <string name="settings.playback.lock_screen_slider.title">Suwak na ekranie blokady</string>
     <string name="settings.playback.next_book.summary">Gdy książka się skończy, zacznie się następna według tytułu.</string>
     <string name="settings.playback.next_book.title">Odtwarzaj następną książkę</string>
+    <string name="settings.playback.play_on_tap.summary">Dotknięcie książki od razu wznawia ją w miejscu, w którym została przerwana. Ukończona książka zaczyna się od początku.</string>
+    <string name="settings.playback.play_on_tap.title">Odtwarzaj po dotknięciu</string>
     <string name="settings.playback.seek_time.summary">O ile przewijają przyciski do tyłu i do przodu</string>
     <string name="settings.playback.seek_time.title">Przewiń o</string>
     <string name="settings.subtitle">Shelf Audio na twoją modłę</string>

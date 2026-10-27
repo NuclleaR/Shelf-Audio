@@ -365,6 +365,8 @@
     <string name="settings.playback.lock_screen_slider.title">Penggeser di layar kunci</string>
     <string name="settings.playback.next_book.summary">Saat buku selesai, buku berikutnya menurut judul akan dimulai.</string>
     <string name="settings.playback.next_book.title">Putar buku berikutnya</string>
+    <string name="settings.playback.play_on_tap.summary">Mengetuk buku akan langsung memutarnya dari posisi terakhir Anda. Buku yang sudah selesai diputar dari awal.</string>
+    <string name="settings.playback.play_on_tap.title">Ketuk untuk memutar</string>
     <string name="settings.playback.seek_time.summary">Seberapa jauh mundur dan maju cepat melompat</string>
     <string name="settings.playback.seek_time.title">Durasi lompatan</string>
     <string name="settings.subtitle">Jadikan Shelf Audio milik Anda</string>

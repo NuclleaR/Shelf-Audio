@@ -45,6 +45,7 @@ import voice.core.search.BookSearchField
 import voice.core.search.BookSearchResult
 import voice.features.bookOverview.di.BookOverviewScope
 import voice.features.bookOverview.overview.BookOverviewCategory
+import voice.features.bookOverview.overview.PlayOnBookTap
 import voice.features.bookOverview.overview.category
 import voice.features.bookOverview.overview.toItemViewState
 import voice.navigation.Destination
@@ -65,6 +66,7 @@ class BookSearchViewModel(
   private val kioskModeFeatureFlag: KioskModeFeatureFlag,
   private val experimentalPlaybackPersistenceFeatureFlag: ExperimentalPlaybackPersistenceFeatureFlag,
   private val lastResults: LastBookSearchResults,
+  private val playOnBookTap: PlayOnBookTap,
   dispatcherProvider: DispatcherProvider,
 ) {
 
@@ -275,7 +277,10 @@ class BookSearchViewModel(
 
   fun onBookClick(id: BookId) {
     saveRecentSearch(query.text.toString())
-    navigator.goTo(Destination.Playback(id))
+    scope.launch {
+      playOnBookTap.onBookTap(id)
+      navigator.goTo(Destination.Playback(id))
+    }
   }
 
   fun onBookLongClick(id: BookId) {

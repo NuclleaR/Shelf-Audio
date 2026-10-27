@@ -401,6 +401,8 @@
     <string name="settings.playback.lock_screen_slider.title">Barra a la pantalla de bloqueig</string>
     <string name="settings.playback.next_book.summary">Quan s\'acaba un llibre, comença el següent per títol.</string>
     <string name="settings.playback.next_book.title">Reprodueix el llibre següent</string>
+    <string name="settings.playback.play_on_tap.summary">En tocar un llibre, es reprodueix de seguida des d\'on l\'havíeu deixat. Un llibre acabat torna a començar.</string>
+    <string name="settings.playback.play_on_tap.title">Toca per reproduir</string>
     <string name="settings.playback.seek_time.summary">Quant salten el rebobinat i l\'avançament ràpid</string>
     <string name="settings.playback.seek_time.title">Durada del salt</string>
     <string name="settings.subtitle">Deixeu Shelf Audio al vostre gust</string>

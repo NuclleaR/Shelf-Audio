@@ -99,6 +99,8 @@ internal fun ListeningSection(
   onAutoRewindStep: (Int) -> Unit,
   lockScreenSlider: Boolean,
   onLockScreenSliderToggle: () -> Unit,
+  playOnBookTap: Boolean,
+  onPlayOnBookTapToggle: () -> Unit,
   autoPlayNextBook: Boolean,
   onAutoPlayNextBookToggle: () -> Unit,
   modifier: Modifier = Modifier,
@@ -143,6 +145,20 @@ internal fun ListeningSection(
         )
       },
       summary = { Text(stringResource(StringsR.string.settings_playback_lock_screen_slider_summary)) },
+    )
+    IslandSwitchRow(
+      title = stringResource(StringsR.string.settings_playback_play_on_tap_title),
+      checked = playOnBookTap,
+      onCheckedChange = { onPlayOnBookTapToggle() },
+      leading = {
+        ShapedIcon(
+          icon = VoiceIcons.PlayArrow,
+          shape = MaterialShapes.Cookie9Sided,
+          containerColor = MaterialTheme.colorScheme.secondary,
+          contentColor = MaterialTheme.colorScheme.onSecondary,
+        )
+      },
+      summary = { Text(stringResource(StringsR.string.settings_playback_play_on_tap_summary)) },
     )
     IslandSwitchRow(
       title = stringResource(StringsR.string.settings_playback_next_book_title),

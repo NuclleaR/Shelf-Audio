@@ -401,6 +401,8 @@
     <string name="settings.playback.lock_screen_slider.title">Bara de pe ecranul de blocare</string>
     <string name="settings.playback.next_book.summary">Când se termină o carte, începe următoarea după titlu.</string>
     <string name="settings.playback.next_book.title">Redă cartea următoare</string>
+    <string name="settings.playback.play_on_tap.summary">Când atingi o carte, pornește imediat de unde ai rămas. O carte terminată începe de la capăt.</string>
+    <string name="settings.playback.play_on_tap.title">Atinge pentru redare</string>
     <string name="settings.playback.seek_time.summary">Cât de mult sar derularea înapoi și înainte</string>
     <string name="settings.playback.seek_time.title">Pas derulare</string>
     <string name="settings.subtitle">Fă Shelf Audio al tău</string>

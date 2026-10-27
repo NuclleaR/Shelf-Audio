@@ -195,6 +195,8 @@ private fun LazyListScope.sections(
       onAutoRewindStep = listener::autoRewindAmountStepped,
       lockScreenSlider = viewState.lockScreenSlider,
       onLockScreenSliderToggle = listener::toggleLockScreenSlider,
+      playOnBookTap = viewState.playOnBookTap,
+      onPlayOnBookTapToggle = listener::togglePlayOnBookTap,
       autoPlayNextBook = viewState.autoPlayNextBook,
       onAutoPlayNextBookToggle = listener::toggleAutoPlayNextBook,
     )

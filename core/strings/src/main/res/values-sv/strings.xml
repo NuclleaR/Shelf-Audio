@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Reglage på låsskärmen</string>
     <string name="settings.playback.next_book.summary">När en bok tar slut startar nästa efter titel.</string>
     <string name="settings.playback.next_book.title">Spela nästa bok</string>
+    <string name="settings.playback.play_on_tap.summary">När du trycker på en bok spelas den direkt, där du slutade. En färdiglyssnad bok börjar om från början.</string>
+    <string name="settings.playback.play_on_tap.title">Tryck för att spela</string>
     <string name="settings.playback.seek_time.summary">Hur långt bakåt- och framåtspolning hoppar</string>
     <string name="settings.playback.seek_time.title">Hopplängd</string>
     <string name="settings.subtitle">Gör Shelf Audio till ditt eget</string>

@@ -419,6 +419,8 @@
     <string name="settings.playback.lock_screen_slider.title">Posúvač na uzamknutej obrazovke</string>
     <string name="settings.playback.next_book.summary">Keď kniha skončí, spustí sa ďalšia podľa názvu.</string>
     <string name="settings.playback.next_book.title">Prehrať ďalšiu knihu</string>
+    <string name="settings.playback.play_on_tap.summary">Ťuknutím na knihu ju hneď spustíte od miesta, kde ste skončili. Dokončená kniha začne od začiatku.</string>
+    <string name="settings.playback.play_on_tap.title">Prehrať ťuknutím</string>
     <string name="settings.playback.seek_time.summary">Ako ďaleko skáče pretáčanie dozadu a dopredu</string>
     <string name="settings.playback.seek_time.title">Preskočiť o</string>
     <string name="settings.subtitle">Prispôsobte si Shelf Audio</string>

@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Skyder på låseskærmen</string>
     <string name="settings.playback.next_book.summary">Når en bog slutter, starter den næste efter titel.</string>
     <string name="settings.playback.next_book.title">Afspil den næste bog</string>
+    <string name="settings.playback.play_on_tap.summary">Når du trykker på en bog, afspilles den med det samme, fra hvor du slap. En færdig bog starter forfra.</string>
+    <string name="settings.playback.play_on_tap.title">Tryk for at afspille</string>
     <string name="settings.playback.seek_time.summary">Hvor langt der springes tilbage og frem</string>
     <string name="settings.playback.seek_time.title">Springinterval</string>
     <string name="settings.subtitle">Gør Shelf Audio til din egen</string>

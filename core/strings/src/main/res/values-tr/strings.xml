@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Kilit ekranı kaydırıcısı</string>
     <string name="settings.playback.next_book.summary">Bir kitap bitince başlığa göre sonraki başlar.</string>
     <string name="settings.playback.next_book.title">Sonraki kitabı oynat</string>
+    <string name="settings.playback.play_on_tap.summary">Bir kitaba dokunduğunuzda, kaldığınız yerden hemen çalmaya başlar. Biten bir kitap baştan başlar.</string>
+    <string name="settings.playback.play_on_tap.title">Dokunarak oynat</string>
     <string name="settings.playback.seek_time.summary">Geri ve ileri sarmanın ne kadar atlayacağı</string>
     <string name="settings.playback.seek_time.title">Atlama süresi</string>
     <string name="settings.subtitle">Shelf Audio\'u kendinize göre ayarlayın</string>

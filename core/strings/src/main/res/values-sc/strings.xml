@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Cursore in s\'ischermu de blocu</string>
     <string name="settings.playback.next_book.summary">Cando unu libru acabbat, incumintzat cussu imbeniente in òrdine de tìtulu.</string>
     <string name="settings.playback.next_book.title">Ascurta su libru imbeniente</string>
+    <string name="settings.playback.play_on_tap.summary">Cando tocas unu libru, incumintzat deretu dae in ue l\'as lassadu. Unu libru acabbadu torrat a incumintzare dae su cumintzu.</string>
+    <string name="settings.playback.play_on_tap.title">Toca pro ascurtare</string>
     <string name="settings.playback.seek_time.summary">Cantu brincant su torrare in segus e s\'andare a in antis</string>
     <string name="settings.playback.seek_time.title">Tempus de brincare</string>
     <string name="settings.subtitle">Cunfigura Shelf Audio a gèniu tuo</string>
