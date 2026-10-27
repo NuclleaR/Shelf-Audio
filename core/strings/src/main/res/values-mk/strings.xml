@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Следно</string>
     <string name="onboarding.analytics_consent.action.disable">Продолжи без аналитика</string>
     <string name="onboarding.analytics_consent.action.enable">Продолжи со аналитика</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Политика за приватност</string>
     <string name="onboarding.analytics_consent.description">Сакате ли да споделувате анонимни податоци за користење за да се подобри Voice? Ова можете да го промените во поставките.</string>
     <string name="onboarding.completion.action.start_listening">Почни со слушање</string>
     <string name="onboarding.completion.subtitle">Вашата прва аудио книга е спремна за пуштање. Пријатно слушање со Voice!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Колку далеку скокаат враќањето и брзото премотување</string>
     <string name="settings.playback.seek_time.title">Чекор на премотување</string>
     <string name="settings.subtitle">Направете го Voice свој</string>
-    <string name="settings.support.faq.title">ЧПП</string>
-    <string name="settings.support.get_support.title">Побарај поддршка</string>
-    <string name="settings.support.report_issue.title">Пријави проблем</string>
     <string name="settings.support.support_voice.summary">Го одржува Voice бесплатен и без реклами</string>
     <string name="settings.support.support_voice.title">Поддржи го развојот</string>
-    <string name="settings.support.suggest_idea.title">Предложи идеја</string>
     <string name="settings.support.supporter.title">Ви благодариме што го поддржувате Voice</string>
-    <string name="settings.support.title">Помош и повратни информации</string>
     <string name="support.action.manage_subscription">Управувај со претплатата</string>
     <string name="support.action.subscribe">Поддржи за %1$s</string>
     <string name="support.action.switch">Префрли на %1$s</string>

@@ -35,10 +35,6 @@ class OnboardingWelcomeViewModel(
     start(analyticsConsent = false)
   }
 
-  fun onPrivacyPolicyClick() {
-    navigator.goTo(Destination.Website("https://voice.woitaschek.de/privacy-policy"))
-  }
-
   private fun start(analyticsConsent: Boolean) {
     scope.launch {
       analyticsConsentStore.updateData { analyticsConsent }

@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Volgende</string>
     <string name="onboarding.analytics_consent.action.disable">Doorgaan zonder analysegegevens</string>
     <string name="onboarding.analytics_consent.action.enable">Doorgaan met analysegegevens</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Privacybeleid</string>
     <string name="onboarding.analytics_consent.description">Anonieme gebruiksgegevens delen om Voice te helpen verbeteren? Je kunt dit wijzigen in de instellingen.</string>
     <string name="onboarding.completion.action.start_listening">Begin te luisteren</string>
     <string name="onboarding.completion.subtitle">Je eerste luisterboek is klaar om af te spelen. Veel luisterplezier met Voice!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Hoe ver terugspoelen en vooruitspoelen springen</string>
     <string name="settings.playback.seek_time.title">Spoelafstand</string>
     <string name="settings.subtitle">Maak Voice helemaal van jou</string>
-    <string name="settings.support.faq.title">Veelgestelde vragen</string>
-    <string name="settings.support.get_support.title">Ondersteuning vragen</string>
-    <string name="settings.support.report_issue.title">Probleem melden</string>
-    <string name="settings.support.suggest_idea.title">Idee delen</string>
     <string name="settings.support.supporter.title">Bedankt dat je Voice steunt</string>
     <string name="settings.support.support_voice.summary">Houdt Voice gratis en reclamevrij</string>
     <string name="settings.support.support_voice.title">Ontwikkeling steunen</string>
-    <string name="settings.support.title">Hulp en feedback</string>
     <string name="support.action.manage_subscription">Abonnement beheren</string>
     <string name="support.action.subscribe">Steun met %1$s</string>
     <string name="support.action.switch">Overstappen naar %1$s</string>

@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Nästa</string>
     <string name="onboarding.analytics_consent.action.disable">Fortsätt utan användningsdata</string>
     <string name="onboarding.analytics_consent.action.enable">Fortsätt med användningsdata</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Integritetspolicy</string>
     <string name="onboarding.analytics_consent.description">Vill du dela anonym användningsdata för att hjälpa till att förbättra Voice? Du kan ändra det i inställningarna.</string>
     <string name="onboarding.completion.action.start_listening">Börja lyssna</string>
     <string name="onboarding.completion.subtitle">Din första ljudbok är redo att spelas upp. Trevlig lyssning!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Hur långt bakåt- och framåtspolning hoppar</string>
     <string name="settings.playback.seek_time.title">Hopplängd</string>
     <string name="settings.subtitle">Gör Voice till ditt eget</string>
-    <string name="settings.support.faq.title">Vanliga frågor</string>
-    <string name="settings.support.get_support.title">Få hjälp</string>
-    <string name="settings.support.report_issue.title">Rapportera ett problem</string>
-    <string name="settings.support.suggest_idea.title">Föreslå en idé</string>
     <string name="settings.support.supporter.title">Tack för att du stöttar Voice</string>
     <string name="settings.support.support_voice.summary">Håller Voice gratis och reklamfritt</string>
     <string name="settings.support.support_voice.title">Stöd utvecklingen</string>
-    <string name="settings.support.title">Hjälp och feedback</string>
     <string name="support.action.manage_subscription">Hantera prenumeration</string>
     <string name="support.action.subscribe">Stötta med %1$s</string>
     <string name="support.action.switch">Byt till %1$s</string>

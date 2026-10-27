@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">بعدی</string>
     <string name="onboarding.analytics_consent.action.disable">قبول نکردن تجزیه‌وتحلیل آماری</string>
     <string name="onboarding.analytics_consent.action.enable">قبول کردن تجزیه‌وتحلیل آماری</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">سیاست حفظ حریم خصوصی</string>
     <string name="onboarding.analytics_consent.description">اطلاعات استفاده را به‌صورت ناشناس به اشتراک می‌گذارید تا Voice بهتر شود؟ می‌توانید این را در تنظیمات تغییر دهید.</string>
     <string name="onboarding.completion.action.start_listening">شروع به گوش دادن</string>
     <string name="onboarding.completion.subtitle">اولین کتاب صوتی شما آمادهٔ پخش است. از گوش دادن با Voice لذت ببرید!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">میزان پرش عقب و جلو بردن سریع</string>
     <string name="settings.playback.seek_time.title">میزان پرش</string>
     <string name="settings.subtitle">Voice را مال خودتان کنید</string>
-    <string name="settings.support.faq.title">سوالات متداول</string>
-    <string name="settings.support.get_support.title">دریافت پشتیبانی</string>
-    <string name="settings.support.report_issue.title">گزارش مشکل</string>
-    <string name="settings.support.suggest_idea.title">یک ایده پیشنهاد کنید</string>
     <string name="settings.support.supporter.title">ممنون که از Voice حمایت می‌کنید</string>
     <string name="settings.support.support_voice.summary">Voice را رایگان و بدون تبلیغات نگه می‌دارد</string>
     <string name="settings.support.support_voice.title">حمایت از توسعه</string>
-    <string name="settings.support.title">راهنما و بازخورد</string>
     <string name="support.action.manage_subscription">مدیریت اشتراک</string>
     <string name="support.action.subscribe">حمایت با %1$s</string>
     <string name="support.action.switch">تغییر به %1$s</string>

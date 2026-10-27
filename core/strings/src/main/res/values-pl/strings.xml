@@ -325,7 +325,6 @@
     <string name="onboarding.action.next">Dalej</string>
     <string name="onboarding.analytics_consent.action.disable">Kontynuuj bez analityki</string>
     <string name="onboarding.analytics_consent.action.enable">Kontynuuj z analityką</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Polityka prywatności</string>
     <string name="onboarding.analytics_consent.description">Chcesz udostępniać anonimowe dane o użytkowaniu, by pomóc ulepszać Voice? Możesz to zmienić w ustawieniach.</string>
     <string name="onboarding.completion.action.start_listening">Zacznij słuchać</string>
     <string name="onboarding.completion.subtitle">Twój pierwszy audiobook jest gotowy do odtworzenia. Miłego słuchania z Voice!</string>
@@ -423,14 +422,9 @@
     <string name="settings.playback.seek_time.summary">O ile przewijają przyciski do tyłu i do przodu</string>
     <string name="settings.playback.seek_time.title">Przewiń o</string>
     <string name="settings.subtitle">Voice na twoją modłę</string>
-    <string name="settings.support.faq.title">Najczęściej zadawane pytania (FAQ)</string>
-    <string name="settings.support.get_support.title">Uzyskaj pomoc</string>
-    <string name="settings.support.report_issue.title">Zgłoś problem</string>
-    <string name="settings.support.suggest_idea.title">Zasugeruj pomysł</string>
     <string name="settings.support.supporter.title">Dzięki, że wspierasz Voice</string>
     <string name="settings.support.support_voice.summary">Utrzymuje Voice za darmo i bez reklam</string>
     <string name="settings.support.support_voice.title">Wesprzyj rozwój</string>
-    <string name="settings.support.title">Pomoc i opinie</string>
     <string name="support.action.manage_subscription">Zarządzaj subskrypcją</string>
     <string name="support.action.subscribe">Wesprzyj za %1$s</string>
     <string name="support.action.switch">Przejdź na %1$s</string>

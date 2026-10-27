@@ -16,7 +16,6 @@ import voice.core.audiobookshelf.AudiobookshelfFeatureFlag
 import voice.core.audiobookshelf.ServerLibrary
 import voice.core.common.AppInfoProvider
 import voice.core.common.DispatcherProvider
-import voice.core.common.FeedbackLinks
 import voice.core.common.MainScope
 import voice.core.data.folders.AudiobookFolders
 import voice.core.data.supporter.SupporterStatus
@@ -264,22 +263,6 @@ class SettingsViewModel(
     mainScope.launch {
       autoPlayNextBookStore.updateData { !it }
     }
-  }
-
-  override fun getSupport() {
-    navigator.goTo(Destination.Website(FeedbackLinks.QUESTIONS))
-  }
-
-  override fun suggestIdea() {
-    navigator.goTo(Destination.Website(FeedbackLinks.IDEAS))
-  }
-
-  override fun openBugReport() {
-    navigator.goTo(Destination.Website(FeedbackLinks.bugReport(appInfoProvider.versionName)))
-  }
-
-  override fun openFaq() {
-    navigator.goTo(Destination.Website(FeedbackLinks.FAQ))
   }
 
   override fun openSupportVoice() {

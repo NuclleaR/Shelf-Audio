@@ -308,7 +308,6 @@
     <string name="onboarding.action.next">הבא</string>
     <string name="onboarding.analytics_consent.action.disable">המשך ללא ניתוח נתונים</string>
     <string name="onboarding.analytics_consent.action.enable">המשך עם ניתוח נתונים</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">מדיניות פרטיות</string>
     <string name="onboarding.analytics_consent.description">לשתף נתוני שימוש אנונימיים כדי לעזור לשפר את Voice? אפשר לשנות זאת בהגדרות.</string>
     <string name="onboarding.completion.action.start_listening">מתחילים להאזין</string>
     <string name="onboarding.completion.subtitle">הקולספר הראשון שלכם מוכן להשמעה. האזנה נעימה עם Voice!</string>
@@ -405,14 +404,9 @@
     <string name="settings.playback.seek_time.summary">כמה רחוק מדלגים בהרצה אחורה וקדימה</string>
     <string name="settings.playback.seek_time.title">משך הדילוג</string>
     <string name="settings.subtitle">הפכו את Voice לשלכם</string>
-    <string name="settings.support.faq.title">שאלות נפוצות</string>
-    <string name="settings.support.get_support.title">תמיכה</string>
-    <string name="settings.support.report_issue.title">דיווח על תקלה</string>
-    <string name="settings.support.suggest_idea.title">הצעת רעיון</string>
     <string name="settings.support.supporter.title">תודה שאתם תומכים ב-Voice</string>
     <string name="settings.support.support_voice.summary">שומר על Voice חינמית וללא פרסומות</string>
     <string name="settings.support.support_voice.title">תמיכה בפיתוח</string>
-    <string name="settings.support.title">עזרה ומשוב</string>
     <string name="support.action.manage_subscription">ניהול המינוי</string>
     <string name="support.action.subscribe">תמיכה ב-%1$s</string>
     <string name="support.action.switch">מעבר ל-%1$s</string>

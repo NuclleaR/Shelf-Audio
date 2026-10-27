@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">அடுத்து</string>
     <string name="onboarding.analytics_consent.action.disable">பகுப்பாய்வு இல்லாமல் தொடரவும்</string>
     <string name="onboarding.analytics_consent.action.enable">பகுப்பாய்வுடன் தொடரவும்</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">தனியுரிமைக் கொள்கை</string>
     <string name="onboarding.analytics_consent.description">Voice-ஐ மேம்படுத்த உதவ, அநாமதேய பயன்பாட்டுத் தரவைப் பகிர விரும்புகிறீர்களா? இதை நீங்கள் அமைப்புகளில் மாற்றலாம்.</string>
     <string name="onboarding.completion.action.start_listening">கேட்கத் தொடங்குங்கள்</string>
     <string name="onboarding.completion.subtitle">உங்கள் முதல் ஆடியோபுக் கேட்கத் தயாராக உள்ளது. Voice உடன் உங்கள் பயணத்தை அனுபவிக்கவும்!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">பின்னோக்கியும் முன்னோக்கியும் எவ்வளவு தாவும்</string>
     <string name="settings.playback.seek_time.title">தாவும் நேரம்</string>
     <string name="settings.subtitle">Voice-ஐ உங்களுடையதாக்குங்கள்</string>
-    <string name="settings.support.faq.title">கேள்விகள்</string>
-    <string name="settings.support.get_support.title">ஆதரவை பெறு</string>
-    <string name="settings.support.report_issue.title">ஒரு சிக்கலைப் புகாரளிக்கவும்</string>
-    <string name="settings.support.suggest_idea.title">ஒரு யோசனையை பரிந்துரைக்கவும்</string>
     <string name="settings.support.supporter.title">Voice-ஐ ஆதரித்ததற்கு நன்றி</string>
     <string name="settings.support.support_voice.summary">Voice-ஐ இலவசமாகவும் விளம்பரமின்றியும் வைத்திருக்கிறது</string>
     <string name="settings.support.support_voice.title">மேம்பாட்டை ஆதரிக்கவும்</string>
-    <string name="settings.support.title">உதவி மற்றும் கருத்து</string>
     <string name="support.action.manage_subscription">சந்தாவை நிர்வகி</string>
     <string name="support.action.subscribe">%1$s செலுத்தி ஆதரி</string>
     <string name="support.action.switch">%1$s-க்கு மாறு</string>

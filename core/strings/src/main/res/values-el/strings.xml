@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Επόμενο</string>
     <string name="onboarding.analytics_consent.action.disable">Συνέχεια χωρίς στατιστικά</string>
     <string name="onboarding.analytics_consent.action.enable">Συνέχεια με στατιστικά</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Πολιτική απορρήτου</string>
     <string name="onboarding.analytics_consent.description">Θέλετε να μοιράζεστε ανώνυμα δεδομένα χρήσης για να βελτιωθεί το Voice; Μπορείτε να το αλλάξετε στις ρυθμίσεις.</string>
     <string name="onboarding.completion.action.start_listening">Έναρξη ακρόασης</string>
     <string name="onboarding.completion.subtitle">Το πρώτο σας ηχητικό βιβλίο είναι έτοιμο για αναπαραγωγή. Καλή ακρόαση με το Voice!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Πόσο μακριά πηγαίνουν η επαναφορά και η γρήγορη προώθηση</string>
     <string name="settings.playback.seek_time.title">Χρονική μετακίνηση</string>
     <string name="settings.subtitle">Κάντε το Voice δικό σας</string>
-    <string name="settings.support.faq.title">Συχνές ερωτήσεις</string>
-    <string name="settings.support.get_support.title">Βοήθεια</string>
-    <string name="settings.support.report_issue.title">Αναφορά προβλήματος</string>
     <string name="settings.support.support_voice.summary">Κρατά το Voice δωρεάν και χωρίς διαφημίσεις</string>
     <string name="settings.support.support_voice.title">Υποστήριξη ανάπτυξης</string>
-    <string name="settings.support.suggest_idea.title">Προτείνετε μια ιδέα</string>
     <string name="settings.support.supporter.title">Ευχαριστούμε που στηρίζετε το Voice</string>
-    <string name="settings.support.title">Βοήθεια και σχόλια</string>
     <string name="support.action.manage_subscription">Διαχείριση συνδρομής</string>
     <string name="support.action.subscribe">Υποστήριξη με %1$s</string>
     <string name="support.action.switch">Αλλαγή σε %1$s</string>

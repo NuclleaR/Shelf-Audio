@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Sonraki</string>
     <string name="onboarding.analytics_consent.action.disable">Analitiksiz devam et</string>
     <string name="onboarding.analytics_consent.action.enable">Analitiğe izin ver</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Gizlilik Politikası</string>
     <string name="onboarding.analytics_consent.description">Voice\'u geliştirmeye yardımcı olmak için anonim kullanım verilerini paylaşmak ister misiniz? Bunu ayarlardan değiştirebilirsiniz.</string>
     <string name="onboarding.completion.action.start_listening">Dinlemeye başla</string>
     <string name="onboarding.completion.subtitle">İlk sesli kitabınız dinlemeye hazır. Voice ile keyifli dinlemeler!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Geri ve ileri sarmanın ne kadar atlayacağı</string>
     <string name="settings.playback.seek_time.title">Atlama süresi</string>
     <string name="settings.subtitle">Voice\'u kendinize göre ayarlayın</string>
-    <string name="settings.support.faq.title">SSS</string>
-    <string name="settings.support.get_support.title">Yardım al</string>
-    <string name="settings.support.report_issue.title">Sorun bildir</string>
-    <string name="settings.support.suggest_idea.title">Fikir öner</string>
     <string name="settings.support.supporter.title">Voice\'u desteklediğiniz için teşekkürler</string>
     <string name="settings.support.support_voice.summary">Voice\'u ücretsiz ve reklamsız tutar</string>
     <string name="settings.support.support_voice.title">Geliştirmeyi destekle</string>
-    <string name="settings.support.title">Yardım ve geri bildirim</string>
     <string name="support.action.manage_subscription">Aboneliği yönet</string>
     <string name="support.action.subscribe">%1$s ile destekle</string>
     <string name="support.action.switch">%1$s planına geç</string>

@@ -8,9 +8,7 @@ import androidx.core.net.toUri
  */
 object FeedbackLinks {
 
-  const val QUESTIONS = "https://github.com/PaulWoitaschek/Voice/discussions/categories/q-a"
   const val IDEAS = "https://github.com/PaulWoitaschek/Voice/discussions/categories/ideas"
-  const val FAQ = "https://voice.woitaschek.de/faq/"
   const val EMAIL = "audiobook@posteo.de"
 
   /**

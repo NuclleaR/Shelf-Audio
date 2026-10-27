@@ -359,7 +359,6 @@
     <string name="onboarding.action.next">التالي</string>
     <string name="onboarding.analytics_consent.action.disable">المتابعة بدون تحليلات</string>
     <string name="onboarding.analytics_consent.action.enable">المتابعة مع التحليلات</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">سياسة الخصوصية</string>
     <string name="onboarding.analytics_consent.description">ما رأيك في مشاركة بيانات استخدام مجهولة الهوية للمساعدة في تحسين Voice؟ يمكنك تغيير ذلك في الإعدادات.</string>
     <string name="onboarding.completion.action.start_listening">بدء الاستماع</string>
     <string name="onboarding.completion.subtitle">كتابك الصوتي الأول جاهز للتشغيل. استماعًا ممتعًا مع Voice!</string>
@@ -459,14 +458,9 @@
     <string name="settings.playback.seek_time.summary">مقدار القفز عند الإرجاع والتقديم السريع</string>
     <string name="settings.playback.seek_time.title">مقدار القفز</string>
     <string name="settings.subtitle">تطبيق Voice على طريقتك</string>
-    <string name="settings.support.faq.title">الأسئلة الشائعة</string>
-    <string name="settings.support.get_support.title">الحصول على مساعدة</string>
-    <string name="settings.support.report_issue.title">الإبلاغ عن مشكلة</string>
     <string name="settings.support.support_voice.summary">يُبقي Voice مجانيًا وخاليًا من الإعلانات</string>
     <string name="settings.support.support_voice.title">دعم التطوير</string>
-    <string name="settings.support.suggest_idea.title">اقتراح فكرة</string>
     <string name="settings.support.supporter.title">شكرًا لدعمك Voice</string>
-    <string name="settings.support.title">المساعدة والملاحظات</string>
     <string name="support.action.manage_subscription">إدارة الاشتراك</string>
     <string name="support.action.subscribe">الدعم مقابل %1$s</string>
     <string name="support.action.switch">التبديل إلى %1$s</string>

@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Seuraava</string>
     <string name="onboarding.analytics_consent.action.disable">Jatka ilman analytiikkaa</string>
     <string name="onboarding.analytics_consent.action.enable">Jatka analytiikan kanssa</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Tietosuojakäytäntö</string>
     <string name="onboarding.analytics_consent.description">Haluatko jakaa anonyymejä käyttötietoja Voicen parantamiseksi? Voit muuttaa tätä asetuksissa.</string>
     <string name="onboarding.completion.action.start_listening">Aloita kuunteleminen</string>
     <string name="onboarding.completion.subtitle">Ensimmäinen äänikirjasi on valmiina kuunneltavaksi. Mukavia kuunteluhetkiä Voicen kanssa!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Kuinka pitkälle taakse- ja eteenpäinkelaus hyppäävät</string>
     <string name="settings.playback.seek_time.title">Siirtymän pituus</string>
     <string name="settings.subtitle">Tee Voicesta omasi</string>
-    <string name="settings.support.faq.title">UKK</string>
-    <string name="settings.support.get_support.title">Hanki apua</string>
-    <string name="settings.support.report_issue.title">Ilmoita ongelmasta</string>
-    <string name="settings.support.suggest_idea.title">Ehdota ideaa</string>
     <string name="settings.support.supporter.title">Kiitos, että tuet Voicea</string>
     <string name="settings.support.support_voice.summary">Pitää Voicen ilmaisena ja mainoksettomana</string>
     <string name="settings.support.support_voice.title">Tue kehitystä</string>
-    <string name="settings.support.title">Ohjeet ja palaute</string>
     <string name="support.action.manage_subscription">Hallinnoi tilausta</string>
     <string name="support.action.subscribe">Tue hintaan %1$s</string>
     <string name="support.action.switch">Vaihda hintaan %1$s</string>

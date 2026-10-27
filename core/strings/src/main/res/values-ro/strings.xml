@@ -308,7 +308,6 @@
     <string name="onboarding.action.next">Mai departe</string>
     <string name="onboarding.analytics_consent.action.disable">Continuă fără statistici</string>
     <string name="onboarding.analytics_consent.action.enable">Continuă cu statistici</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Politica de confidențialitate</string>
     <string name="onboarding.analytics_consent.description">Vrei să trimiți date anonime de utilizare ca să ne ajuți să îmbunătățim Voice? Poți schimba asta din setări.</string>
     <string name="onboarding.completion.action.start_listening">Începe să asculți</string>
     <string name="onboarding.completion.subtitle">Prima ta carte este pregătită. Ascultare plăcută cu Voice!</string>
@@ -405,14 +404,9 @@
     <string name="settings.playback.seek_time.summary">Cât de mult sar derularea înapoi și înainte</string>
     <string name="settings.playback.seek_time.title">Pas derulare</string>
     <string name="settings.subtitle">Fă Voice al tău</string>
-    <string name="settings.support.faq.title">Întrebări frecvente</string>
-    <string name="settings.support.get_support.title">Obține ajutor</string>
-    <string name="settings.support.report_issue.title">Raportează o problemă</string>
     <string name="settings.support.support_voice.summary">Menține Voice gratuit și fără reclame</string>
     <string name="settings.support.support_voice.title">Susține dezvoltarea</string>
-    <string name="settings.support.suggest_idea.title">Propune o idee</string>
     <string name="settings.support.supporter.title">Mulțumim că susții Voice</string>
-    <string name="settings.support.title">Ajutor și feedback</string>
     <string name="support.action.manage_subscription">Gestionează abonamentul</string>
     <string name="support.action.subscribe">Susține cu %1$s</string>
     <string name="support.action.switch">Treci la %1$s</string>

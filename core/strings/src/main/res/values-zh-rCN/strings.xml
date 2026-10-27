@@ -274,7 +274,6 @@
     <string name="onboarding.action.next">下一步</string>
     <string name="onboarding.analytics_consent.action.disable">继续，不启用分析</string>
     <string name="onboarding.analytics_consent.action.enable">继续并启用分析</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">隐私政策</string>
     <string name="onboarding.analytics_consent.description">愿意分享匿名使用数据来帮助改进 Voice 吗？您可以在设置中更改。</string>
     <string name="onboarding.completion.action.start_listening">开始收听</string>
     <string name="onboarding.completion.subtitle">您的第一本有声书已准备好播放。祝您用 Voice 听得愉快！</string>
@@ -369,14 +368,9 @@
     <string name="settings.playback.seek_time.summary">快退和快进跳转的时长</string>
     <string name="settings.playback.seek_time.title">跳过时间</string>
     <string name="settings.subtitle">打造专属于您的 Voice</string>
-    <string name="settings.support.faq.title">常见问题</string>
-    <string name="settings.support.get_support.title">寻求支持</string>
-    <string name="settings.support.report_issue.title">报告问题</string>
     <string name="settings.support.support_voice.summary">让 Voice 保持免费、无广告</string>
     <string name="settings.support.support_voice.title">支持开发</string>
-    <string name="settings.support.suggest_idea.title">提出建议</string>
     <string name="settings.support.supporter.title">感谢您支持 Voice</string>
-    <string name="settings.support.title">帮助与反馈</string>
     <string name="support.action.manage_subscription">管理订阅</string>
     <string name="support.action.subscribe">以 %1$s 支持</string>
     <string name="support.action.switch">切换为 %1$s</string>

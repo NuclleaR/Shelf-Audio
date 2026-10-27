@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.retain.retain
 import androidx.compose.ui.Modifier
@@ -33,7 +32,6 @@ fun OnboardingWelcome(modifier: Modifier = Modifier) {
     viewState = viewModel.viewState(),
     onContinueWithAnalytics = viewModel::onContinueWithAnalytics,
     onContinueWithoutAnalytics = viewModel::onContinueWithoutAnalytics,
-    onPrivacyPolicyClick = viewModel::onPrivacyPolicyClick,
   )
 }
 
@@ -42,7 +40,6 @@ private fun OnboardingWelcome(
   viewState: OnboardingWelcomeViewState,
   onContinueWithAnalytics: () -> Unit,
   onContinueWithoutAnalytics: () -> Unit,
-  onPrivacyPolicyClick: () -> Unit,
   modifier: Modifier = Modifier,
 ) {
   OnboardingScaffold(
@@ -63,9 +60,6 @@ private fun OnboardingWelcome(
           color = MaterialTheme.colorScheme.onSurfaceVariant,
           textAlign = TextAlign.Center,
         )
-        TextButton(onClick = onPrivacyPolicyClick) {
-          Text(stringResource(StringsR.string.onboarding_analytics_consent_action_privacy_policy))
-        }
       }
     },
     actions = {
@@ -110,7 +104,6 @@ private fun OnboardingWelcomePreview(
       viewState = viewState,
       onContinueWithAnalytics = {},
       onContinueWithoutAnalytics = {},
-      onPrivacyPolicyClick = {},
     )
   }
 }
