@@ -3,9 +3,9 @@ package voice.core.kioskmode
 import voice.core.data.BookId
 
 object KioskModeDemoData {
-  const val ECHOES_COVER_URL: String = "https://raw.githubusercontent.com/PaulWoitaschek/Voice/main/artwork/demo-data/echoes.webp"
+  const val ECHOES_COVER_URL: String = "https://raw.githubusercontent.com/NuclleaR/Shelf-Audio/main/artwork/demo-data/echoes.webp"
   const val BOOKSHOP_COVER_URL: String =
-    "https://raw.githubusercontent.com/PaulWoitaschek/Voice/main/artwork/demo-data/bookshop.webp"
+    "https://raw.githubusercontent.com/NuclleaR/Shelf-Audio/main/artwork/demo-data/bookshop.webp"
   const val COVER_URL: String = ECHOES_COVER_URL
 
   val echoesOfTomorrow: DemoAudiobook = DemoAudiobook(
@@ -58,7 +58,7 @@ object KioskModeDemoData {
       DemoBookmark(title = "Crossing the ridge", timestamp = "03:41:10"),
       DemoBookmark(title = "The compass turns", timestamp = "05:08:29"),
     ),
-    coverUrl = "https://raw.githubusercontent.com/PaulWoitaschek/Voice/main/artwork/demo-data/horizon.webp",
+    coverUrl = "https://raw.githubusercontent.com/NuclleaR/Shelf-Audio/main/artwork/demo-data/horizon.webp",
   )
   val demoAudiobooks: List<DemoAudiobook> = listOf(
     echoesOfTomorrow,

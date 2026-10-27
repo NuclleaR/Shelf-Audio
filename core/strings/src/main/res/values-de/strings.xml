@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Weiter</string>
     <string name="onboarding.analytics_consent.action.disable">Ohne Datenfreigabe fortfahren</string>
     <string name="onboarding.analytics_consent.action.enable">Mit Datenfreigabe fortfahren</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Datenschutzerklärung</string>
     <string name="onboarding.analytics_consent.description">Anonyme Nutzungsdaten freigeben, um Voice zu verbessern? Du kannst das in den Einstellungen ändern.</string>
     <string name="onboarding.completion.action.start_listening">Start</string>
     <string name="onboarding.completion.subtitle">Dein erstes Hörbuch ist bereit zum Abspielen. Viel Spaß beim Hören mit Voice!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Wie weit Zurück- und Vorspulen springen</string>
     <string name="settings.playback.seek_time.title">Vor- und zurückspulen</string>
     <string name="settings.subtitle">Mach Voice zu Deinem</string>
-    <string name="settings.support.faq.title">Häufige Fragen</string>
-    <string name="settings.support.get_support.title">Hilfe erhalten</string>
-    <string name="settings.support.report_issue.title">Ein Problem melden</string>
-    <string name="settings.support.suggest_idea.title">Eine Idee vorschlagen</string>
     <string name="settings.support.supporter.title">Danke, dass Du Voice unterstützt</string>
     <string name="settings.support.support_voice.summary">Hält Voice kostenlos und werbefrei</string>
     <string name="settings.support.support_voice.title">Entwicklung unterstützen</string>
-    <string name="settings.support.title">Hilfe und Feedback</string>
     <string name="support.action.manage_subscription">Abo verwalten</string>
     <string name="support.action.subscribe">Mit %1$s unterstützen</string>
     <string name="support.action.switch">Zu %1$s wechseln</string>

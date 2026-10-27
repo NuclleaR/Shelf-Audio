@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Tovább</string>
     <string name="onboarding.analytics_consent.action.disable">Folytatás analitika nélkül</string>
     <string name="onboarding.analytics_consent.action.enable">Folytatás analitikával</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Adatvédelmi irányelvek</string>
     <string name="onboarding.analytics_consent.description">Megosztana névtelen használati adatokat a Voice fejlesztéséhez? Ezt a beállításokban módosíthatja.</string>
     <string name="onboarding.completion.action.start_listening">Lejátszás elkezdése</string>
     <string name="onboarding.completion.subtitle">Az Ön első könyve várja a lejátszást. A Voice jó szórakozást kíván!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Mennyit ugrik a visszatekerés és az előretekerés</string>
     <string name="settings.playback.seek_time.title">Kihagyás mértéke</string>
     <string name="settings.subtitle">Tegye a Voice-t a sajátjává</string>
-    <string name="settings.support.faq.title">GYIK</string>
-    <string name="settings.support.get_support.title">Segítségkérés</string>
-    <string name="settings.support.report_issue.title">Hibajelentés</string>
     <string name="settings.support.support_voice.summary">Ingyenesen és reklámmentesen tartja a Voice-t</string>
     <string name="settings.support.support_voice.title">Fejlesztés támogatása</string>
-    <string name="settings.support.suggest_idea.title">Ötlet beküldése</string>
     <string name="settings.support.supporter.title">Köszönjük, hogy támogatja a Voice-t</string>
-    <string name="settings.support.title">Súgó és visszajelzés</string>
     <string name="support.action.manage_subscription">Előfizetés kezelése</string>
     <string name="support.action.subscribe">Támogatás: %1$s</string>
     <string name="support.action.switch">Váltás erre: %1$s</string>

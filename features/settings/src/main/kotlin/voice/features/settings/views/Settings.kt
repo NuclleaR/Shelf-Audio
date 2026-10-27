@@ -209,17 +209,14 @@ private fun LazyListScope.sections(
       onEndChange = listener::setAutoSleepTimerEnd,
     )
   }
-  section("help") { modifier ->
-    HelpSection(
-      modifier = modifier,
-      showAnalytics = viewState.showAnalyticSetting,
-      analyticsEnabled = viewState.analyticsEnabled,
-      onFaqClick = listener::openFaq,
-      onGetHelpClick = listener::getSupport,
-      onReportClick = listener::openBugReport,
-      onSuggestClick = listener::suggestIdea,
-      onAnalyticsToggle = listener::toggleAnalytics,
-    )
+  if (viewState.showAnalyticSetting) {
+    section("analytics") { modifier ->
+      AnalyticsSection(
+        modifier = modifier,
+        analyticsEnabled = viewState.analyticsEnabled,
+        onAnalyticsToggle = listener::toggleAnalytics,
+      )
+    }
   }
   section("about") { modifier ->
     AboutFooter(

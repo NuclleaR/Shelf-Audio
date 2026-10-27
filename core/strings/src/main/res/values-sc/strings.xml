@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Sighi</string>
     <string name="onboarding.analytics_consent.action.disable">Sighi chene analìtica</string>
     <string name="onboarding.analytics_consent.action.enable">Sighi cun analìtica</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Polìtica de riservadesa</string>
     <string name="onboarding.analytics_consent.description">Cheres cumpartzire datos anònimos de impreu pro agiudare a megiorare Voice? Lu podes cambiare in sas Impostatziones.</string>
     <string name="onboarding.completion.action.start_listening">Incumintza a ascurtare</string>
     <string name="onboarding.completion.subtitle">Su primu audiolibru tuo est prontu. Bonu ascurtu cun Voice!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Cantu brincant su torrare in segus e s\'andare a in antis</string>
     <string name="settings.playback.seek_time.title">Tempus de brincare</string>
     <string name="settings.subtitle">Cunfigura Voice a gèniu tuo</string>
-    <string name="settings.support.faq.title">Preguntas fitianas</string>
-    <string name="settings.support.get_support.title">Pedi agiudu</string>
-    <string name="settings.support.report_issue.title">Sinnala unu problema</string>
     <string name="settings.support.support_voice.summary">Mantenet Voice de badas e chene publitzidade</string>
     <string name="settings.support.support_voice.title">Suporta s\'isvilupu</string>
-    <string name="settings.support.suggest_idea.title">Cussìgia un\'idea</string>
     <string name="settings.support.supporter.title">Gràtzias de suportare Voice</string>
-    <string name="settings.support.title">Agiudu e cummentos</string>
     <string name="support.action.manage_subscription">Manìgia s\'abbonamentu</string>
     <string name="support.action.subscribe">Suporta pro %1$s</string>
     <string name="support.action.switch">Cola a %1$s</string>

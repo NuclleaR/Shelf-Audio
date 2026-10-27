@@ -488,8 +488,6 @@
     <string name="onboarding.analytics_consent.action.disable">Continue without analytics</string>
     <!-- Button label for continuing with analytics enabled. -->
     <string name="onboarding.analytics_consent.action.enable">Continue with analytics</string>
-    <!-- Link label for opening the privacy policy from analytics consent. -->
-    <string name="onboarding.analytics_consent.action.privacy_policy">Privacy Policy</string>
     <!-- One short line on the onboarding welcome screen, above the buttons to continue with or without analytics. Asks whether the listener shares anonymous usage data and says they can change it in settings. -->
     <string name="onboarding.analytics_consent.description">Share anonymous usage data to help improve Voice? You can change this in settings.</string>
     <!-- Button label for leaving onboarding and starting playback. -->
@@ -676,23 +674,12 @@
     <string name="settings.playback.seek_time.title">Skip amount</string>
     <!-- Playful subtitle below the settings title. -->
     <string name="settings.subtitle">Make Voice yours</string>
-    <!-- Settings support row for opening the FAQ. -->
-    <string name="settings.support.faq.title">FAQ</string>
-    <!-- Settings support row for getting help. -->
-    <string name="settings.support.get_support.title">Get help</string>
-    <!-- Settings support row for helping translate the app. -->
-    <!-- Settings support row for reporting a problem. -->
-    <string name="settings.support.report_issue.title">Report a problem</string>
     <!-- Description on the settings card that opens the support screen, for subscribing, tipping or donating. -->
     <string name="settings.support.support_voice.summary">Keeps Voice free and ad-free</string>
     <!-- Settings row for opening the donation/support screen. -->
     <string name="settings.support.support_voice.title">Support development</string>
-    <!-- Settings support row for suggesting a product idea. -->
-    <string name="settings.support.suggest_idea.title">Suggest an idea</string>
     <!-- Title of the settings support card for someone who already supported Voice with a subscription or tip. -->
     <string name="settings.support.supporter.title">Thanks for supporting Voice</string>
-    <!-- Title of the settings section with the FAQ, getting help, reporting problems, suggesting ideas and translating. -->
-    <string name="settings.support.title">Help and feedback</string>
     <!-- Support screen button that opens the Google Play subscription settings. -->
     <string name="support.action.manage_subscription">Manage subscription</string>
     <!-- Support screen button that starts a supporter subscription or a one-time tip. %1$s is the price with its period, for example "€2.99 a month" or "€4.99 once". -->

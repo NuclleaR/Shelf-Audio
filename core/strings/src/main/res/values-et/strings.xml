@@ -291,7 +291,6 @@
     <string name="onboarding.action.next">Edasi</string>
     <string name="onboarding.analytics_consent.action.disable">Jätka ilma analüütikata</string>
     <string name="onboarding.analytics_consent.action.enable">Jätka analüütikaga</string>
-    <string name="onboarding.analytics_consent.action.privacy_policy">Privaatsuspoliitika</string>
     <string name="onboarding.analytics_consent.description">Kas jagad anonüümseid kasutusandmeid, et aidata Voice\'i paremaks teha? Saad seda seadetes muuta.</string>
     <string name="onboarding.completion.action.start_listening">Alusta kuulamist</string>
     <string name="onboarding.completion.subtitle">Sinu esimene heliraamat on kuulamiseks valmis. Head kuulamist Voice\'iga!</string>
@@ -387,14 +386,9 @@
     <string name="settings.playback.seek_time.summary">Kui kaugele tagasi- ja edasikerimine hüppavad</string>
     <string name="settings.playback.seek_time.title">Kerimise samm</string>
     <string name="settings.subtitle">Tee Voice enda omaks</string>
-    <string name="settings.support.faq.title">KKK</string>
-    <string name="settings.support.get_support.title">Küsi abi</string>
-    <string name="settings.support.report_issue.title">Teata veast</string>
-    <string name="settings.support.suggest_idea.title">Paku välja idee</string>
     <string name="settings.support.supporter.title">Aitäh, et toetad Voice\'i</string>
     <string name="settings.support.support_voice.summary">Hoiab Voice\'i tasuta ja reklaamivabana</string>
     <string name="settings.support.support_voice.title">Toeta arendust</string>
-    <string name="settings.support.title">Abi ja tagasiside</string>
     <string name="support.action.manage_subscription">Halda tellimust</string>
     <string name="support.action.subscribe">Toeta hinnaga %1$s</string>
     <string name="support.action.switch">Mine üle: %1$s</string>
