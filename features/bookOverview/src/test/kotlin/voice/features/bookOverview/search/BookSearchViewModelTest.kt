@@ -10,6 +10,7 @@ import app.cash.turbine.test
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.coVerifyOrder
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -38,6 +39,7 @@ import voice.core.search.BookSearchField
 import voice.core.search.BookSearchResult
 import voice.features.bookOverview.MemoryDataStore
 import voice.features.bookOverview.book
+import voice.features.bookOverview.overview.PlayOnBookTap
 import voice.features.bookOverview.overview.toItemViewState
 import voice.navigation.Destination
 import voice.navigation.Navigator
@@ -65,6 +67,7 @@ class BookSearchViewModelTest {
   private val playerController = mockk<PlayerController>(relaxed = true)
   private val currentBookStore = MemoryDataStore<BookId?>(null)
   private val lastResults = LastBookSearchResults()
+  private val playOnBookTap = mockk<PlayOnBookTap>(relaxUnitFun = true)
   private val search = mockk<BookSearch> {
     coEvery { search(any()) } returns emptyList()
     coEvery { search("king") } returns listOf(
@@ -273,7 +276,10 @@ class BookSearchViewModelTest {
     viewModel.onBookClick(shining.id)
 
     coVerify { recentBookSearchRepo.add("king") }
-    verify { navigator.goTo(Destination.Playback(shining.id)) }
+    coVerifyOrder {
+      playOnBookTap.onBookTap(shining.id)
+      navigator.goTo(Destination.Playback(shining.id))
+    }
   }
 
   @Test
@@ -330,6 +336,7 @@ class BookSearchViewModelTest {
         MemoryFeatureFlag(experimentalPlaybackPersistence),
       ),
       lastResults = lastResults,
+      playOnBookTap = playOnBookTap,
       dispatcherProvider = dispatcherProvider,
     )
   }

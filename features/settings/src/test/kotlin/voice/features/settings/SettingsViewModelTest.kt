@@ -37,6 +37,7 @@ import voice.core.kioskmode.KioskModeFeatureFlag
 import voice.core.playback.AutoPlayNextBookStore
 import voice.core.playback.AutoRewindAmountStore
 import voice.core.playback.LockScreenSliderStore
+import voice.core.playback.PlayOnBookTapStore
 import voice.core.playback.SeekTimeStore
 import voice.core.sleeptimer.SleepTimerPreference
 import voice.core.sleeptimer.SleepTimerPreferenceStore
@@ -76,6 +77,7 @@ class SettingsViewModelTest {
   private val autoRewindAmountStore = MemoryDataStore(10)
   private val seekTimeStore = MemoryDataStore(30)
   private val lockScreenSliderStore = MemoryDataStore(true)
+  private val playOnBookTapStore = MemoryDataStore(false)
   private val autoPlayNextBookStore = MemoryDataStore(false)
   private val gridModeStore = MemoryDataStore(GridMode.GRID)
   private val sleepTimerPreferenceStore = MemoryDataStore(SleepTimerPreference.Default)
@@ -116,6 +118,7 @@ class SettingsViewModelTest {
     autoRewindAmountStore = AutoRewindAmountStore(autoRewindAmountStore),
     seekTimeStore = SeekTimeStore(seekTimeStore),
     lockScreenSliderStore = LockScreenSliderStore(lockScreenSliderStore),
+    playOnBookTapStore = PlayOnBookTapStore(playOnBookTapStore),
     autoPlayNextBookStore = AutoPlayNextBookStore(autoPlayNextBookStore),
     navigator = navigator,
     appInfoProvider = appInfoProvider,
@@ -489,6 +492,19 @@ class SettingsViewModelTest {
 
       viewModel.toggleLockScreenSlider()
       assertTrue(awaitItem().lockScreenSlider)
+    }
+  }
+
+  @Test
+  fun `playing on tap can be turned on`() = scope.runTest {
+    backgroundScope.launchMolecule(RecompositionMode.Immediate) {
+      viewModel.viewState()
+    }.filterNotNull().test {
+      assertFalse(awaitItem().playOnBookTap)
+
+      viewModel.togglePlayOnBookTap()
+      assertTrue(awaitItem().playOnBookTap)
+      assertTrue(playOnBookTapStore.data.first())
     }
   }
 

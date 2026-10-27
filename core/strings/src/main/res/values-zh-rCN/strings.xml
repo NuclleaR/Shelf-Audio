@@ -365,6 +365,8 @@
     <string name="settings.playback.lock_screen_slider.title">锁屏进度条</string>
     <string name="settings.playback.next_book.summary">一本书播完后，按书名顺序开始下一本。</string>
     <string name="settings.playback.next_book.title">播放下一本书</string>
+    <string name="settings.playback.play_on_tap.summary">轻触一本书，即可从上次停下的地方立即播放。已听完的书会从头开始。</string>
+    <string name="settings.playback.play_on_tap.title">轻触即播放</string>
     <string name="settings.playback.seek_time.summary">快退和快进跳转的时长</string>
     <string name="settings.playback.seek_time.title">跳过时间</string>
     <string name="settings.subtitle">打造专属于您的 Shelf Audio</string>

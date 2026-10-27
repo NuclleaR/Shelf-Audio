@@ -401,6 +401,8 @@
     <string name="settings.playback.lock_screen_slider.title">פס ההתקדמות במסך הנעילה</string>
     <string name="settings.playback.next_book.summary">כשספר מסתיים, הספר הבא לפי השם מתחיל.</string>
     <string name="settings.playback.next_book.title">הפעלת הספר הבא</string>
+    <string name="settings.playback.play_on_tap.summary">נגיעה בספר מפעילה אותו מיד מהמקום שבו הפסקתם. ספר שהסתיים מתחיל מההתחלה.</string>
+    <string name="settings.playback.play_on_tap.title">הפעלה בנגיעה</string>
     <string name="settings.playback.seek_time.summary">כמה רחוק מדלגים בהרצה אחורה וקדימה</string>
     <string name="settings.playback.seek_time.title">משך הדילוג</string>
     <string name="settings.subtitle">הפכו את Shelf Audio לשלכם</string>

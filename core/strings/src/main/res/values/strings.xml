@@ -668,6 +668,10 @@
     <string name="settings.playback.next_book.summary">When a book ends, the next one by title starts.</string>
     <!-- Title of the switch in the listening settings that starts the next book when one ends. -->
     <string name="settings.playback.next_book.title">Play the next book</string>
+    <!-- Summary of the switch in the listening settings that starts a book as soon as the listener taps it in the library or in search. The player opens as well. A book that was listened to the end starts again from the beginning. -->
+    <string name="settings.playback.play_on_tap.summary">Tapping a book plays it right away, from where you left off. A finished book starts over.</string>
+    <!-- Title of the switch in the listening settings that starts a book as soon as the listener taps it in the library or in search, instead of only opening the player. -->
+    <string name="settings.playback.play_on_tap.title">Tap to play</string>
     <!-- Explains the skip amount setting. -->
     <string name="settings.playback.seek_time.summary">How far rewind and fast forward jump</string>
     <!-- Title for the setting that controls skip-forward and rewind duration. -->

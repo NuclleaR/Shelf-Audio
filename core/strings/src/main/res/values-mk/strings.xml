@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Лизгач на заклучениот екран</string>
     <string name="settings.playback.next_book.summary">Кога ќе заврши една книга, започнува следната по наслов.</string>
     <string name="settings.playback.next_book.title">Пушти ја следната книга</string>
+    <string name="settings.playback.play_on_tap.summary">Со допир на книга, таа веднаш се пушта од местото каде што застанавте. Завршена книга почнува од почеток.</string>
+    <string name="settings.playback.play_on_tap.title">Пушти со допир</string>
     <string name="settings.playback.seek_time.summary">Колку далеку скокаат враќањето и брзото премотување</string>
     <string name="settings.playback.seek_time.title">Чекор на премотување</string>
     <string name="settings.subtitle">Направете го Shelf Audio свој</string>

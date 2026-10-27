@@ -16,6 +16,7 @@ interface SettingsListener {
   fun autoRewindAmountChanged(seconds: Int)
   fun autoRewindAmountStepped(step: Int)
   fun toggleLockScreenSlider()
+  fun togglePlayOnBookTap()
   fun toggleAutoPlayNextBook()
   fun openSupportVoice()
   fun setAutoSleepTimer(checked: Boolean)
@@ -41,6 +42,7 @@ interface SettingsListener {
       override fun autoRewindAmountChanged(seconds: Int) {}
       override fun autoRewindAmountStepped(step: Int) {}
       override fun toggleLockScreenSlider() {}
+      override fun togglePlayOnBookTap() {}
       override fun toggleAutoPlayNextBook() {}
       override fun openSupportVoice() {}
       override fun setAutoSleepTimer(checked: Boolean) {}

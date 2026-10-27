@@ -419,6 +419,8 @@
     <string name="settings.playback.lock_screen_slider.title">Повзунок на екрані блокування</string>
     <string name="settings.playback.next_book.summary">Коли книга закінчується, починає грати наступна за назвою.</string>
     <string name="settings.playback.next_book.title">Грати наступну книгу</string>
+    <string name="settings.playback.play_on_tap.summary">Дотик до книги одразу вмикає її з місця, де ви зупинилися. Дослухана книга почнеться спочатку.</string>
+    <string name="settings.playback.play_on_tap.title">Грати одним дотиком</string>
     <string name="settings.playback.seek_time.summary">Наскільки далеко перемотують кнопки назад і вперед</string>
     <string name="settings.playback.seek_time.title">Інтервал перемотування</string>
     <string name="settings.subtitle">Зробіть Shelf Audio своїм</string>

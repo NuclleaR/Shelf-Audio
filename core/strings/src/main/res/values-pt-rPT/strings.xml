@@ -401,6 +401,8 @@
     <string name="settings.playback.lock_screen_slider.title">Barra no ecrã de bloqueio</string>
     <string name="settings.playback.next_book.summary">Quando um livro termina, começa o seguinte por título.</string>
     <string name="settings.playback.next_book.title">Reproduzir o livro seguinte</string>
+    <string name="settings.playback.play_on_tap.summary">Ao tocar num livro, este é reproduzido de imediato, a partir de onde ficou. Um livro terminado recomeça do início.</string>
+    <string name="settings.playback.play_on_tap.title">Reproduzir com um toque</string>
     <string name="settings.playback.seek_time.summary">Quanto tempo saltar ao recuar e avançar</string>
     <string name="settings.playback.seek_time.title">Duração do salto</string>
     <string name="settings.subtitle">Torne o Shelf Audio seu</string>

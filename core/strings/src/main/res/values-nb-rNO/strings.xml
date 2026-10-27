@@ -383,6 +383,8 @@
     <string name="settings.playback.lock_screen_slider.title">Spolelinje på låseskjermen</string>
     <string name="settings.playback.next_book.summary">Når en bok er ferdig, starter den neste etter tittel.</string>
     <string name="settings.playback.next_book.title">Spill av neste bok</string>
+    <string name="settings.playback.play_on_tap.summary">Når du trykker på en bok, spilles den av med en gang, der du slapp. En ferdig bok starter på nytt.</string>
+    <string name="settings.playback.play_on_tap.title">Trykk for å spille av</string>
     <string name="settings.playback.seek_time.summary">Hvor langt tilbake- og fremoverspoling hopper</string>
     <string name="settings.playback.seek_time.title">Hoppintervall</string>
     <string name="settings.subtitle">Gjør Shelf Audio til din egen</string>
