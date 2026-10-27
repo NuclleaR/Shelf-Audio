@@ -15,7 +15,7 @@ import time
 import xml.etree.ElementTree as ElementTree
 from pathlib import Path
 
-PACKAGE = "de.ph1b.audiobook"
+PACKAGE = "com.nucllear.shelfaudio"
 ACTIVITY = f"{PACKAGE}/voice.app.MainActivity"
 DESTINATION_PREFIX = "voice.navigation.Destination."
 INSTANCES_DIR = Path.home() / ".android" / "voice-agent" / "instances"

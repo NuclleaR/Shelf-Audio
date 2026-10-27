@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-PACKAGE=de.ph1b.audiobook.debug
+PACKAGE=com.nucllear.shelfaudio
 
 # Initialize and create a backup
 adb shell bmgr enable true
