@@ -39,7 +39,7 @@ The four groups are the split for parallel subagents.
 |--------|-----------|----------------------------|--------|-----------------------|-------------------------------------------------------------------------------------------------|
 | cs     | Czech     | vy, lowercase              | „…“    | one, few, many, other |                                                                                                 |
 | el     | Greek     | εσείς: Επιλέξτε, σας       | «…»    | one, other            | Question mark is `;`. Actions as nouns: Προσθήκη σημείωσης                                      |
-| hu     | Hungarian | Ön: Válassza, könyvtárában | „…”    | one, other            | Actions as nouns: Hozzáadás, Mappa kiválasztása. Suffixes on Voice take a hyphen: Voice-szal |
+| hu     | Hungarian | Ön: Válassza, könyvtárában | „…”    | one, other            | Actions as nouns: Hozzáadás, Mappa kiválasztása. |
 | mk     | Macedonian | вие, lowercase, in sentences: Изберете, вашите; bare imperative on buttons: Додај | „…“    | one, other            | фолдер, and аудио книга as two words                                                            |
 | pl     | Polish    | ty: Potrząśnij, swoją      | „…”    | one, few, many, other |                                                                                                 |
 | ru     | Russian   | вы, lowercase              | «…»    | one, few, many, other |                                                                                                 |

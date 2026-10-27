@@ -44,9 +44,9 @@ system or an ad. This applies to new English strings as well as translations.
 - Keep labels about as short as the English. Buttons, tabs, chips, and stat labels have little room; find a shorter
   wording rather than an unusual abbreviation.
 - Use the language's own capitalization (German nouns, sentence case elsewhere), not English Title Case.
-- Voice is the app's name: keep it as Voice, in Latin script, in every locale. Never translate it into the word for
-  "voice" (குரல் in Tamil) or write it in another script (فويس). Inflect it where the grammar needs it (`Voice-szal`,
-  `Voice\'u`, `Voice-க்கு`). A sentence may leave the name out, but never swaps it for another word.
+- Shelf Audio is the app's name: keep it as Shelf Audio, in Latin script, in every locale. Never translate its words
+  or write it in another script. Inflect it where the grammar needs it (`Shelf Audiota` in Finnish). A sentence may
+  leave the name out, but never swaps it for another word.
 - Don't translate Google Play, GitHub, Ko-fi, or Bluetooth.
 - Keep emoji.
 

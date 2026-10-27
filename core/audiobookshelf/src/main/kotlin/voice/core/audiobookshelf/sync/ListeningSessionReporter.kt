@@ -159,14 +159,14 @@ internal class ListeningSessionReporter(
   private suspend fun startSessionRequest(): StartSessionRequest {
     return StartSessionRequest(
       deviceInfo = DeviceInfo(
-        clientName = "Voice",
+        clientName = "Shelf Audio",
         clientVersion = appInfoProvider.versionName,
         manufacturer = Build.MANUFACTURER,
         model = Build.MODEL,
         sdkVersion = Build.VERSION.SDK_INT,
         deviceId = deviceId(),
       ),
-      mediaPlayer = "Voice",
+      mediaPlayer = "Shelf Audio",
       forceDirectPlay = true,
       forceTranscode = false,
       supportedMimeTypes = SUPPORTED_MIME_TYPES,

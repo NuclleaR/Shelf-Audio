@@ -3,7 +3,9 @@
     "allow": [
       "Bash(./gradlew *)",
       "Bash(git *)",
-      "Bash(gh pr *)"
+      "Bash(gh pr *)",
+      "Bash(gh run view *)",
+      "Bash(gh run list *)"
     ],
     "ask": [
       "Bash(git push *--force*)",

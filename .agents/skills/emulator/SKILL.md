@@ -89,7 +89,7 @@ For the checks in the design skill:
 ```sh
 adb shell cmd uimode night yes                                        # dark mode, `no` for light
 adb shell settings put system font_scale 1.5                          # also 2.0, 1.0 resets
-adb shell cmd locale set-app-locales de.ph1b.audiobook --locales iw   # RTL with real translations
+adb shell cmd locale set-app-locales com.nucllear.shelfaudio --locales iw   # RTL with real translations
 adb shell settings put system accelerometer_rotation 0
 adb shell settings put system user_rotation 1                         # landscape, 0 for portrait
 for scale in animator_duration_scale window_animation_scale transition_animation_scale; do
@@ -102,8 +102,8 @@ settings.
 
 ## Logs and data
 
-- Crashes: `adb logcat -b crash -d`. The app's log: `adb logcat -d --pid=$(adb shell pidof de.ph1b.audiobook)`.
-- The app's files: `adb shell run-as de.ph1b.audiobook ls files databases`.
+- Crashes: `adb logcat -b crash -d`. The app's log: `adb logcat -d --pid=$(adb shell pidof com.nucllear.shelfaudio)`.
+- The app's files: `adb shell run-as com.nucllear.shelfaudio ls files databases`.
 - Playback state: `adb shell dumpsys media_session`.
 - `/sdcard/testfiles` also has `Authors` and `SingleAudiobook`, the same books laid out for the other folder types.
 
