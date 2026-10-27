@@ -23,3 +23,11 @@ run:
     export ANDROID_SERIAL="$serial"
     ./gradlew :app:installFreeDebug
     .agents/skills/emulator/scripts/ui.py open BookOverview
+
+# Stop the emulator that `just run` started
+stop:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    sdk="${ANDROID_HOME:-$(sed -n 's/^sdk.dir=//p' local.properties)}"
+    export PATH="$sdk/platform-tools:$PATH"
+    .agents/skills/emulator/scripts/emulator.py stop --name just
