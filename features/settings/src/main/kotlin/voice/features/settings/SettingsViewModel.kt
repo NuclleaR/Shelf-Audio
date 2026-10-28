@@ -332,6 +332,8 @@ class SettingsViewModel(
         return@launch
       }
       if (++appVersionTapCount >= 13) {
+        // the menu can be hidden again, and then it takes all the taps once more
+        appVersionTapCount = 0
         developerMenuUnlockedStore.updateData { true }
         viewEffects.emit(SettingsViewEffect.DeveloperMenuUnlocked)
       }

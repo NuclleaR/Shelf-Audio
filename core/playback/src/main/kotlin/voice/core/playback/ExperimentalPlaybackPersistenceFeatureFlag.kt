@@ -17,6 +17,7 @@ class ExperimentalPlaybackPersistenceFeatureFlag(flag: FeatureFlag<Boolean>) : F
     factory.boolean(
       key = "experimental_playback_persistence",
       description = "Uses the experimental playback persistence implementation.",
+      defaultValue = true,
     ),
   )
 }

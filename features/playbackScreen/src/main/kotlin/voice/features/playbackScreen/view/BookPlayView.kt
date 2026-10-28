@@ -49,7 +49,12 @@ internal fun BookPlayView(
   snackbarHostState: SnackbarHostState = remember { SnackbarHostState() },
 ) {
   val clock = rememberAnimationClock(running = viewState.playing)
-  BoxWithConstraints(Modifier.fillMaxSize()) {
+  val swipeDownToClose = rememberSwipeDownToCloseState()
+  BoxWithConstraints(
+    Modifier
+      .fillMaxSize()
+      .swipeDownToClose(swipeDownToClose),
+  ) {
     // split screen panes are often wider than tall, but too narrow or too short for a cover next to the controls
     val sideBySide = maxWidth > maxHeight && maxWidth >= 600.dp && maxHeight >= 360.dp
     AuroraBackground(

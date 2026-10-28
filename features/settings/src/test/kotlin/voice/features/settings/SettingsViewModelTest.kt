@@ -219,6 +219,25 @@ class SettingsViewModelTest {
   }
 
   @Test
+  fun `a hidden developer menu takes all 13 taps again`() = scope.runTest {
+    repeat(13) {
+      viewModel.onAppVersionClick()
+    }
+    runCurrent()
+    developerMenuUnlockedStore.updateData { false }
+
+    viewModel.onAppVersionClick()
+    runCurrent()
+    assertFalse(developerMenuUnlockedStore.data.first())
+
+    repeat(12) {
+      viewModel.onAppVersionClick()
+    }
+    runCurrent()
+    assertTrue(developerMenuUnlockedStore.data.first())
+  }
+
+  @Test
   fun `developer menu unlock emits snackbar effect`() = scope.runTest {
     viewModel.viewEffects.test {
       repeat(13) {
