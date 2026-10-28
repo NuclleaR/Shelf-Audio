@@ -6,9 +6,9 @@ import io.mockk.mockk
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
-import kotlinx.coroutines.test.advanceUntilIdle
+import kotlinx.coroutines.test.advanceTimeBy
+import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
-import kotlinx.coroutines.yield
 import voice.core.playback.playstate.PlayStateManager
 import voice.core.sleeptimer.impl.MemoryDataStore
 import java.time.Clock
@@ -18,10 +18,19 @@ import java.time.ZoneId
 import kotlin.test.Test
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.minutes
+import kotlin.time.Duration.Companion.seconds
 
 class AutoEnableSleepTimerMinimalTest {
   private val testDispatcher = StandardTestDispatcher()
   private val testScope = TestScope(testDispatcher)
+  private var startedAt = Instant.parse("2020-01-01T23:00:00Z")
+  private val clock = object : Clock() {
+    override fun instant(): Instant = startedAt.plusMillis(testDispatcher.scheduler.currentTime)
+
+    override fun getZone(): ZoneId = ZoneId.of("UTC")
+
+    override fun withZone(zone: ZoneId?): Clock = this
+  }
   private val sleepTimerPreferenceStore = MemoryDataStore(SleepTimerPreference.Default)
   private val playStateManager = PlayStateManager()
   private val sleepTimer = mockk<SleepTimer>(relaxUnitFun = true) {
@@ -44,7 +53,7 @@ class AutoEnableSleepTimerMinimalTest {
     sleepTimerPreferenceStore = SleepTimerPreferenceStore(sleepTimerPreferenceStore),
     playStateManager = playStateManager,
     sleepTimer = sleepTimer,
-    clock = Clock.fixed(Instant.parse("2020-01-01T23:00:00Z"), ZoneId.of("UTC")),
+    clock = clock,
     scope = testScope.backgroundScope,
   )
 
@@ -54,8 +63,7 @@ class AutoEnableSleepTimerMinimalTest {
 
     sut.onAppStart(mockk())
     playStateManager.playState = PlayStateManager.PlayState.Playing
-    advanceUntilIdle()
-    yield()
+    runCurrent()
 
     coVerify { sleepTimer.enable(SleepTimerMode.TimedWithDefault) }
   }
@@ -66,8 +74,38 @@ class AutoEnableSleepTimerMinimalTest {
 
     sut.onAppStart(mockk())
     playStateManager.playState = PlayStateManager.PlayState.Playing
-    advanceUntilIdle()
-    yield()
+    runCurrent()
+
+    coVerify(exactly = 0) { sleepTimer.enable(any()) }
+  }
+
+  @Test
+  fun `enables when the time window starts during playback`() = testScope.runTest {
+    startedAt = Instant.parse("2020-01-01T21:59:00Z")
+    sleepTimerPreferenceStore.updateData { prefs(enabled = true) }
+
+    sut.onAppStart(mockk())
+    playStateManager.playState = PlayStateManager.PlayState.Playing
+    advanceTimeBy(59.seconds)
+    runCurrent()
+    coVerify(exactly = 0) { sleepTimer.enable(any()) }
+
+    advanceTimeBy(2.seconds)
+    runCurrent()
+    coVerify(exactly = 1) { sleepTimer.enable(SleepTimerMode.TimedWithDefault) }
+  }
+
+  @Test
+  fun `does nothing when playback pauses before the time window starts`() = testScope.runTest {
+    startedAt = Instant.parse("2020-01-01T21:59:00Z")
+    sleepTimerPreferenceStore.updateData { prefs(enabled = true) }
+
+    sut.onAppStart(mockk())
+    playStateManager.playState = PlayStateManager.PlayState.Playing
+    advanceTimeBy(30.seconds)
+    playStateManager.playState = PlayStateManager.PlayState.Paused
+    advanceTimeBy(2.minutes)
+    runCurrent()
 
     coVerify(exactly = 0) { sleepTimer.enable(any()) }
   }
