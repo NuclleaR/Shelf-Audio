@@ -50,7 +50,7 @@ class PositionUpdater(
             while (true) {
               delay(
                 if (experimentalPlaybackPersistenceFeatureFlag.get()) {
-                  5.minutes
+                  1.minutes
                 } else {
                   400.milliseconds
                 },
