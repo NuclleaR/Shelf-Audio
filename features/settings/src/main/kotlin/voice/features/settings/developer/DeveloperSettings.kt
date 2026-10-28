@@ -113,6 +113,21 @@ private fun DeveloperSettings(
           }
         }
 
+        item {
+          ListItem(
+            trailingContent = {
+              TextButton(
+                onClick = viewModel::hideDeveloperMenu,
+                content = {
+                  Text("Hide")
+                },
+              )
+            },
+          ) {
+            Text("Developer Menu")
+          }
+        }
+
         val fcmToken = viewState.fcmToken
         if (fcmToken != null) {
           item {

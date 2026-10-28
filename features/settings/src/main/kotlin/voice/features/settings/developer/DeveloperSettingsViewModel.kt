@@ -15,6 +15,7 @@ import voice.core.featureflag.EnumFeatureFlag
 import voice.core.featureflag.FeatureFlag
 import voice.core.remoteconfig.api.FmcTokenProvider
 import voice.core.remoteconfig.api.RemoteConfig
+import voice.features.settings.DeveloperMenuUnlockedStore
 import voice.navigation.Destination
 import voice.navigation.Navigator
 
@@ -25,6 +26,7 @@ class DeveloperSettingsViewModel(
   private val remoteConfig: RemoteConfig,
   dispatcherProvider: DispatcherProvider,
   private val featureFlags: Set<FeatureFlag<*>>,
+  private val developerMenuUnlockedStore: DeveloperMenuUnlockedStore,
 ) {
 
   private val scope = MainScope(dispatcherProvider)
@@ -89,6 +91,13 @@ class DeveloperSettingsViewModel(
 
   fun showOnboarding() {
     navigator.goTo(Destination.OnboardingWelcome)
+  }
+
+  fun hideDeveloperMenu() {
+    scope.launch {
+      developerMenuUnlockedStore.updateData { false }
+      navigator.goBack()
+    }
   }
 
   fun setBooleanOverride(
