@@ -45,12 +45,14 @@ import voice.core.playback.history.ListeningHistoryRecorder
 import voice.core.playback.history.PlaybackPosition
 import voice.core.playback.overlay
 import voice.core.playback.playstate.PlayStateManager
+import voice.core.scanner.FileCovers
 import voice.core.sleeptimer.SleepTimer
 import voice.core.sleeptimer.SleepTimerMode
 import voice.core.sleeptimer.SleepTimerMode.TimedWithDuration
 import voice.core.sleeptimer.SleepTimerPreference
 import voice.core.sleeptimer.SleepTimerPreferenceStore
 import voice.core.sleeptimer.SleepTimerState
+import java.io.File
 import java.time.Clock
 import java.time.Instant
 import java.time.ZoneId
@@ -138,6 +140,7 @@ class BookPlayViewModelTest {
     clock = clock,
     serverLibrary = serverLibrary,
     lastPlaybackSpeedStore = LastPlaybackSpeedStore(MemoryDataStore(1F)),
+    fileCovers = mockk { coEvery { cover(any()) } returns null },
   )
 
   @Test
@@ -392,6 +395,32 @@ class BookPlayViewModelTest {
   }
 
   @Test
+  fun `the player shows the cover of the playing file`() = scope.runTest {
+    val fileCover = File("file-cover.jpg")
+    val viewModel = viewModel(book = book(cover = File("book-cover.jpg")), fileCover = fileCover)
+
+    backgroundScope.launchMolecule(RecompositionMode.Immediate) {
+      viewModel.viewState()
+    }.test {
+      runCurrent()
+      assertEquals(expected = fileCover.toURI().toString(), actual = expectMostRecentItem()!!.cover)
+    }
+  }
+
+  @Test
+  fun `the player shows the book cover when the playing file has none`() = scope.runTest {
+    val bookCover = File("book-cover.jpg")
+    val viewModel = viewModel(book = book(cover = bookCover))
+
+    backgroundScope.launchMolecule(RecompositionMode.Immediate) {
+      viewModel.viewState()
+    }.test {
+      runCurrent()
+      assertEquals(expected = bookCover.toURI().toString(), actual = expectMostRecentItem()!!.cover)
+    }
+  }
+
+  @Test
   fun `viewState uses currently playing demo book in kiosk mode`() = scope.runTest {
     val viewModel = viewModel(kioskMode = true)
 
@@ -489,6 +518,7 @@ class BookPlayViewModelTest {
     livePlaybackFlow: MutableStateFlow<LivePlaybackState?> = MutableStateFlow(null),
     playStateFlow: MutableStateFlow<PlayStateManager.PlayState> = MutableStateFlow(PlayStateManager.PlayState.Paused),
     lastPlaybackSpeed: Float = 1F,
+    fileCover: File? = null,
   ): BookPlayViewModel {
     return BookPlayViewModel(
       bookRepository = mockk {
@@ -522,6 +552,10 @@ class BookPlayViewModelTest {
       clock = clock,
       serverLibrary = serverLibrary,
       lastPlaybackSpeedStore = LastPlaybackSpeedStore(MemoryDataStore(lastPlaybackSpeed)),
+      fileCovers = mockk {
+        coEvery { cover(any()) } returns null
+        coEvery { cover(book.currentChapter) } returns fileCover
+      },
     )
   }
 }
@@ -545,6 +579,7 @@ private fun book(
   name: String = "TestBook",
   lastPlayedAtMillis: Long = 0L,
   addedAtMillis: Long = 0L,
+  cover: File? = null,
 ): Book {
   val chapters = listOf(
     chapter(),
@@ -571,7 +606,7 @@ private fun book(
         narrator = null,
         series = null,
         part = null,
-        cover = null,
+        cover = cover,
         fileLastModified = null,
       ),
       customName = null,

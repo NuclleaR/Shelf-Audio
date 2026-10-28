@@ -6,6 +6,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import dev.zacsweers.metro.Assisted
 import dev.zacsweers.metro.AssistedFactory
@@ -44,6 +45,7 @@ import voice.core.playback.misc.VolumeGain
 import voice.core.playback.overlay
 import voice.core.playback.playstate.PlayStateManager
 import voice.core.playback.withDefaultSpeed
+import voice.core.scanner.FileCovers
 import voice.core.sleeptimer.SleepTimer
 import voice.core.sleeptimer.SleepTimerMode
 import voice.core.sleeptimer.SleepTimerMode.TimedWithDuration
@@ -54,6 +56,7 @@ import voice.core.ui.formatTime
 import voice.features.playbackScreen.batteryOptimization.BatteryOptimization
 import voice.navigation.Destination
 import voice.navigation.Navigator
+import java.io.File
 import java.time.Clock
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours
@@ -82,6 +85,7 @@ class BookPlayViewModel(
   private val clock: Clock,
   private val serverLibrary: ServerLibrary,
   private val lastPlaybackSpeedStore: LastPlaybackSpeedStore,
+  private val fileCovers: FileCovers,
   @Assisted
   private val bookId: BookId,
 ) {
@@ -157,6 +161,10 @@ class BookPlayViewModel(
       book.currentChapter.chapterMarks.indexOf(currentMark) + 1
     val lastJump = remember { historyRecorder.lastJump }.collectAsState().value
     val unavailableBooks = remember { serverLibrary.unavailableBooks }.collectAsState(initial = emptySet()).value
+    val currentChapter = book.currentChapter
+    val fileCover = produceState<File?>(initialValue = null, currentChapter) {
+      value = fileCovers.cover(currentChapter)
+    }.value
     return BookPlayViewState(
       sleepTimerState = sleepTime.toViewState(),
       playing = isPlaying,
@@ -166,7 +174,7 @@ class BookPlayViewModel(
       chapterName = currentMark.name?.takeIf { hasMoreThanOneChapter && it.isNotBlank() },
       duration = currentMark.durationMs.milliseconds,
       playedTime = positionInCurrentMark.milliseconds,
-      cover = book.content.coverUrl,
+      cover = fileCover?.toURI()?.toString() ?: book.content.coverUrl,
       skipSilence = book.content.skipSilence,
       playbackSpeed = book.content.playbackSpeed,
       volumeBoostActive = book.content.gain > 0F,
