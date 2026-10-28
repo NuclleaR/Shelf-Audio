@@ -60,6 +60,7 @@ class VoicePlayer(
 ) : ForwardingPlayer(player) {
 
   private var skipSilence = false
+  private var skippedBackToStartOf: String? = null
 
   private val endOfChapterSleepTimerListener = object : Player.Listener {
     override fun onMediaItemTransition(
@@ -165,10 +166,16 @@ class VoicePlayer(
     }
   }
 
+  // Like previous in other players, a skip back first stops at the start of the chapter. Only the next one, while the
+  // chapter is still in its first seconds, goes on into the previous chapter.
   private suspend fun seekBackBy(skipAmount: Duration) {
+    val mediaId = player.currentMediaItem?.mediaId
+    val position = player.currentPosition.milliseconds
+    val crossMediaItems = mediaId != null && mediaId == skippedBackToStartOf && position < PREVIOUS_CHAPTER_WINDOW
+    skippedBackToStartOf = mediaId.takeIf { !crossMediaItems && position <= skipAmount }
     seekBackBy(
       skipAmount = skipAmount,
-      crossMediaItems = true,
+      crossMediaItems = crossMediaItems,
     )
   }
 
@@ -191,7 +198,7 @@ class VoicePlayer(
       remaining -= currentPosition
       val previousMediaItemIndex = mediaItemIndex - 1
       if (previousMediaItemIndex < 0) {
-        player.seekTo(0)
+        player.seekTo(0, 0)
         return
       }
       val previousMediaItem = player.getMediaItemAt(previousMediaItemIndex)
@@ -449,3 +456,5 @@ private val autoRewindReasons = setOf(
   Player.PLAY_WHEN_READY_CHANGE_REASON_AUDIO_FOCUS_LOSS,
   Player.PLAY_WHEN_READY_CHANGE_REASON_AUDIO_BECOMING_NOISY,
 )
+
+private val PREVIOUS_CHAPTER_WINDOW = 3.seconds
