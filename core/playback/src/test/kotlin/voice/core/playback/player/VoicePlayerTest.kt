@@ -174,7 +174,7 @@ class VoicePlayerTest {
   }
 
   @Test
-  fun `seekToPrevious carries over into the previous chapter mark`() = scope.runTest {
+  fun `seekToPrevious stops at the start of the chapter mark before carrying over into the previous one`() = scope.runTest {
     setMediaItems(
       listOf(
         chapter(
@@ -188,7 +188,7 @@ class VoicePlayerTest {
       ),
     )
 
-    seekTimeStore.updateData { 5 }
+    seekTimeStore.updateData { 3 }
 
     player.seekTo(1, 12_000)
     player.prepare()
@@ -198,13 +198,72 @@ class VoicePlayerTest {
     player.shouldHavePosition(1, 6_999)
 
     player.seekToPrevious()
-    player.shouldHavePosition(1, 1_999)
+    player.shouldHavePosition(1, 3_999)
 
     player.seekToPrevious()
-    player.shouldHavePosition(0, 1_998)
+    player.shouldHavePosition(1, 999)
+
+    player.seekToPrevious()
+    player.shouldHavePosition(1, 0)
+
+    player.seekToPrevious()
+    player.shouldHavePosition(0, 1_999)
 
     player.seekToPrevious()
     player.shouldHavePosition(0, 0)
+
+    player.seekToPrevious()
+    player.shouldHavePosition(0, 0)
+  }
+
+  @Test
+  fun `seekToPrevious stops at the start of the chapter mark again after its first 3 seconds`() = scope.runTest {
+    setMediaItems(
+      listOf(
+        chapter(
+          ChapterMark(startMs = 0, endMs = 19_999, name = null),
+          ChapterMark(startMs = 20_000, endMs = 40_000, name = null),
+        ),
+      ),
+    )
+
+    seekTimeStore.updateData { 5 }
+
+    player.seekTo(1, 4_000)
+    player.prepare()
+    awaitReady()
+
+    player.seekToPrevious()
+    player.shouldHavePosition(1, 0)
+
+    player.seekTo(1, 3_500)
+    player.seekToPrevious()
+    player.shouldHavePosition(1, 0)
+
+    player.seekTo(1, 2_500)
+    player.seekToPrevious()
+    player.shouldHavePosition(0, 17_499)
+  }
+
+  @Test
+  fun `seekToPrevious stops at the start of the book when the first chapter mark is shorter than the skip`() = scope.runTest {
+    setMediaItems(
+      listOf(
+        chapter(
+          ChapterMark(startMs = 0, endMs = 1_999, name = null),
+          ChapterMark(startMs = 2_000, endMs = 20_000, name = null),
+        ),
+      ),
+    )
+
+    seekTimeStore.updateData { 5 }
+
+    player.seekTo(1, 1_000)
+    player.prepare()
+    awaitReady()
+
+    player.seekToPrevious()
+    player.shouldHavePosition(1, 0)
 
     player.seekToPrevious()
     player.shouldHavePosition(0, 0)

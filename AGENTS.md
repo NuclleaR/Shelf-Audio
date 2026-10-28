@@ -10,4 +10,4 @@ Voice is a modular Android audiobook player.
 
 ## Pull requests
 
-Shelf Audio is its own project, based on Voice. On GitHub this repository is still a fork of PaulWoitaschek/Voice, so pass `--repo NuclleaR/Shelf-Audio` to `gh`. Never open pull requests or issues in PaulWoitaschek/Voice.
+Shelf Audio is its own project, based on Voice. On GitHub it no longer belongs to Voice's fork network. Never open pull requests or issues in PaulWoitaschek/Voice.
