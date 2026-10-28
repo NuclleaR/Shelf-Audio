@@ -24,10 +24,11 @@ run:
     ./gradlew :app:installFreeDebug
     .agents/skills/emulator/scripts/ui.py open BookOverview
 
-# Stop the emulator that `just run` started
+# Stop the emulator that `just run` started, and the Gradle daemons
 stop:
     #!/usr/bin/env bash
     set -euo pipefail
+    ./gradlew --stop
     sdk="${ANDROID_HOME:-$(sed -n 's/^sdk.dir=//p' local.properties)}"
     export PATH="$sdk/platform-tools:$PATH"
     .agents/skills/emulator/scripts/emulator.py stop --name just
