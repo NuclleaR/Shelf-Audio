@@ -2,9 +2,12 @@ package voice.core.playback.stats
 
 import voice.core.data.BookId
 import voice.core.data.ListeningSession
+import voice.core.data.repo.BookListening
 import voice.core.data.repo.ListeningStatsRepo
 import voice.core.data.repo.ListeningSummary
 import java.time.Instant
+import java.time.LocalDate
+import kotlin.time.Duration
 
 class MemoryListeningStatsRepo : ListeningStatsRepo {
 
@@ -21,6 +24,16 @@ class MemoryListeningStatsRepo : ListeningStatsRepo {
     from: Instant,
     to: Instant,
   ): ListeningSummary = error("Not used")
+
+  override suspend fun listenedPerBook(
+    from: Instant,
+    to: Instant,
+  ): List<BookListening> = error("Not used")
+
+  override suspend fun listenedPerDay(
+    from: Instant,
+    to: Instant,
+  ): Map<LocalDate, Duration> = error("Not used")
 
   override suspend fun moveToBook(
     from: List<BookId>,

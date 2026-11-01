@@ -3,6 +3,7 @@ package voice.core.data.repo
 import voice.core.data.BookId
 import voice.core.data.ListeningSession
 import java.time.Instant
+import java.time.LocalDate
 import kotlin.time.Duration
 
 /**
@@ -22,6 +23,24 @@ public interface ListeningStatsRepo {
     from: Instant = Instant.EPOCH,
     to: Instant = Instant.ofEpochMilli(Long.MAX_VALUE),
   ): ListeningSummary
+
+  /**
+   * The time spent playing each book in the sessions that started in between [from] (inclusive) and [to]
+   * (exclusive), the longest first.
+   */
+  public suspend fun listenedPerBook(
+    from: Instant,
+    to: Instant,
+  ): List<BookListening>
+
+  /**
+   * The time spent playing on each local day with listening, in the sessions that started in between [from]
+   * (inclusive) and [to] (exclusive). A session counts towards the day it started on.
+   */
+  public suspend fun listenedPerDay(
+    from: Instant,
+    to: Instant,
+  ): Map<LocalDate, Duration>
 
   /**
    * Hands the sessions over when a book shows up under a new id.
@@ -47,4 +66,13 @@ public data class ListeningSummary(
 public data class FinishedBook(
   val bookId: BookId,
   val at: Instant,
+)
+
+public data class BookListening(
+  val bookId: BookId,
+  val listened: Duration,
+  /**
+   * Whether playback reached the end of the book in one of the sessions.
+   */
+  val finished: Boolean,
 )

@@ -6,6 +6,8 @@ import voice.core.data.BookId
 import voice.core.data.ListeningSession
 import voice.core.data.repo.internals.dao.ListeningSessionDao
 import java.time.Instant
+import java.time.LocalDate
+import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 
 @ContributesBinding(AppScope::class)
@@ -31,6 +33,24 @@ internal constructor(private val dao: ListeningSessionDao) : ListeningStatsRepo 
         FinishedBook(bookId = it.bookId, at = Instant.ofEpochMilli(it.atMillis))
       },
     )
+  }
+
+  override suspend fun listenedPerBook(
+    from: Instant,
+    to: Instant,
+  ): List<BookListening> {
+    return dao.listenedPerBook(from.toEpochMilli(), to.toEpochMilli()).map {
+      BookListening(bookId = it.bookId, listened = it.listenedMillis.milliseconds, finished = it.reachedEnd)
+    }
+  }
+
+  override suspend fun listenedPerDay(
+    from: Instant,
+    to: Instant,
+  ): Map<LocalDate, Duration> {
+    return dao.listenedPerDay(from.toEpochMilli(), to.toEpochMilli()).associate {
+      LocalDate.ofEpochDay(it.epochDay) to it.listenedMillis.milliseconds
+    }
   }
 
   override suspend fun moveToBook(

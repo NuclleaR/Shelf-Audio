@@ -10,6 +10,7 @@ import voice.core.data.BookId
 import voice.core.data.ListeningSession
 import voice.core.data.repo.internals.AppDb
 import java.time.Instant
+import java.time.LocalDate
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.time.Duration
@@ -105,6 +106,46 @@ class ListeningStatsRepoImplTest {
     val summary = repo.summary(from = Instant.parse("2026-01-01T00:00:00Z"), to = Instant.parse("2027-01-01T00:00:00Z"))
 
     assertEquals(expected = 1.hours, actual = summary.listened)
+  }
+
+  @Test
+  fun `the listening per book is summed up in the range, the longest first`() = runTest {
+    insert(session("2026-10-06T08:00:00Z", listened = 1.hours))
+    insert(session("2026-10-06T10:00:00Z", listened = 3.hours, bookId = hyperion))
+    insert(session("2026-10-07T10:00:00Z", listened = 30.minutes, reachedEnd = true))
+    insert(session("2026-10-07T12:00:00Z", listened = Duration.ZERO, bookId = BookId("opened")))
+    insert(session("2026-10-08T10:00:00Z", listened = 5.hours))
+
+    val listening = repo.listenedPerBook(
+      from = Instant.parse("2026-10-06T00:00:00Z"),
+      to = Instant.parse("2026-10-08T00:00:00Z"),
+    )
+
+    assertEquals(
+      expected = listOf(
+        BookListening(hyperion, listened = 3.hours, finished = false),
+        BookListening(dune, listened = 1.hours + 30.minutes, finished = true),
+      ),
+      actual = listening,
+    )
+  }
+
+  @Test
+  fun `the listening per day is summed up by local day`() = runTest {
+    // still the 5th in UTC, but 00:30 on the 6th in Berlin
+    insert(session("2026-10-05T22:30:00Z", listened = 1.hours))
+    insert(session("2026-10-06T10:00:00Z", listened = 2.hours, bookId = hyperion))
+    insert(session("2026-10-08T10:00:00Z", listened = 30.minutes))
+
+    val listening = repo.listenedPerDay(from = Instant.EPOCH, to = Instant.parse("2027-01-01T00:00:00Z"))
+
+    assertEquals(
+      expected = mapOf(
+        LocalDate.of(2026, 10, 6) to 3.hours,
+        LocalDate.of(2026, 10, 8) to 30.minutes,
+      ),
+      actual = listening,
+    )
   }
 
   @Test
