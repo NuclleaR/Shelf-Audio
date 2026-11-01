@@ -478,6 +478,14 @@
     <string name="library.survey.open">Take the survey</string>
     <!-- Title of the card in the library that invites to a short survey about Shelf Audio. -->
     <string name="library.survey.title">Help shape Shelf Audio</string>
+    <!-- Shown in the listening report when nothing was listened to in the chosen period, today or this week. -->
+    <string name="listening_report.empty">No stories yet</string>
+    <!-- Read out by accessibility services for the check badge on a book's cover in the listening report: the book was listened to the end in the chosen period. -->
+    <string name="listening_report.finished">Finished</string>
+    <!-- Summary of the settings row that opens the listening report. -->
+    <string name="listening_report.summary">Time and books, today and this week</string>
+    <!-- Title of the listening report, a screen that shows how long was listened, and to which books, today or this week. Also the settings row that opens it. -->
+    <string name="listening_report.title">Listening report</string>
     <!-- Media browser title for recently played audiobooks. -->
     <string name="media_session.library.recent">Recent</string>
     <!-- Media browser root title for all audiobooks. -->

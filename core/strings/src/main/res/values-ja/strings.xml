@@ -269,6 +269,10 @@
     <string name="library.survey.message">簡単な質問にいくつかお答えいただくと、今後の方向性を決める参考になります。</string>
     <string name="library.survey.open">アンケートに回答</string>
     <string name="library.survey.title">Shelf Audio づくりにご協力ください</string>
+    <string name="listening_report.empty">まだ物語はありません</string>
+    <string name="listening_report.finished">聴き終わりました</string>
+    <string name="listening_report.summary">今日と今週の聴いた時間と本</string>
+    <string name="listening_report.title">リスニングレポート</string>
     <string name="media_session.library.recent">最近</string>
     <string name="media_session.library.root">すべてのオーディオブック</string>
     <string name="onboarding.action.next">次へ</string>

@@ -320,6 +320,10 @@
     <string name="library.survey.message">Pár rýchlych otázok pomôže rozhodnúť, čo príde na rad.</string>
     <string name="library.survey.open">Vyplniť dotazník</string>
     <string name="library.survey.title">Pomôžte utvárať Shelf Audio</string>
+    <string name="listening_report.empty">Zatiaľ žiadne príbehy</string>
+    <string name="listening_report.finished">Dopočúvané</string>
+    <string name="listening_report.summary">Čas a knihy, dnes a tento týždeň</string>
+    <string name="listening_report.title">Prehľad počúvania</string>
     <string name="media_session.library.recent">Nedávne</string>
     <string name="media_session.library.root">Všetky zvukové knihy</string>
     <string name="onboarding.action.next">Ďalej</string>

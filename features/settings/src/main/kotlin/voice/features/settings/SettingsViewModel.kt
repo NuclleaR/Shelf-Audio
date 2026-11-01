@@ -284,6 +284,10 @@ class SettingsViewModel(
     navigator.goTo(Destination.FolderPicker)
   }
 
+  override fun openListeningReport() {
+    navigator.goTo(Destination.ListeningReport)
+  }
+
   override fun openAudiobookshelf() {
     mainScope.launch {
       navigator.goTo(

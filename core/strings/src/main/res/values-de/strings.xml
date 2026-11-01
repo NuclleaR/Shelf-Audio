@@ -286,6 +286,10 @@
     <string name="library.survey.message">Ein paar kurze Fragen helfen bei der Entscheidung, was als Nächstes kommt.</string>
     <string name="library.survey.open">Umfrage starten</string>
     <string name="library.survey.title">Gestalte Shelf Audio mit</string>
+    <string name="listening_report.empty">Noch keine Geschichten</string>
+    <string name="listening_report.finished">Zu Ende gehört</string>
+    <string name="listening_report.summary">Zeit und Bücher, heute und diese Woche</string>
+    <string name="listening_report.title">Hörübersicht</string>
     <string name="media_session.library.recent">Kürzlich</string>
     <string name="media_session.library.root">Alle Hörbücher</string>
     <string name="onboarding.action.next">Weiter</string>

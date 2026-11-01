@@ -160,6 +160,12 @@ private fun LazyListScope.sections(
       onUseGridChange = listener::setUseGrid,
     )
   }
+  section("listeningReport") { modifier ->
+    ListeningReportItem(
+      modifier = modifier,
+      onClick = listener::openListeningReport,
+    )
+  }
   if (viewState.showSupportDevelopment) {
     section("support") { modifier ->
       SupportCard(

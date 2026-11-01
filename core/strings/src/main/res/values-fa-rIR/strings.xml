@@ -286,6 +286,10 @@
     <string name="library.survey.message">چند سؤال کوتاه کمک می‌کند مشخص شود قدم بعدی چه باشد.</string>
     <string name="library.survey.open">شرکت در نظرسنجی</string>
     <string name="library.survey.title">به ساختن آیندهٔ Shelf Audio کمک کنید</string>
+    <string name="listening_report.empty">هنوز داستانی نیست</string>
+    <string name="listening_report.finished">تا آخر شنیده شد</string>
+    <string name="listening_report.summary">زمان و کتاب‌ها، امروز و این هفته</string>
+    <string name="listening_report.title">گزارش شنیدن</string>
     <string name="media_session.library.recent">اخیراً پخش‌شده</string>
     <string name="media_session.library.root">همه کتاب های صوتی</string>
     <string name="onboarding.action.next">بعدی</string>

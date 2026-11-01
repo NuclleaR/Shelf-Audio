@@ -354,6 +354,10 @@
     <string name="library.survey.message">بضعة أسئلة سريعة تساعد في تحديد الخطوة التالية.</string>
     <string name="library.survey.open">المشاركة في الاستبيان</string>
     <string name="library.survey.title">رأيك يصنع مستقبل Shelf Audio</string>
+    <string name="listening_report.empty">لا توجد قصص بعد</string>
+    <string name="listening_report.finished">اكتمل الاستماع</string>
+    <string name="listening_report.summary">الوقت والكتب، اليوم وهذا الأسبوع</string>
+    <string name="listening_report.title">تقرير الاستماع</string>
     <string name="media_session.library.recent">الحديثة</string>
     <string name="media_session.library.root">كل الكتب الصوتية</string>
     <string name="onboarding.action.next">التالي</string>

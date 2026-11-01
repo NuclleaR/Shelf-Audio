@@ -286,6 +286,10 @@
     <string name="library.survey.message">Et par raske spørsmål hjelper med å bestemme hva som kommer videre.</string>
     <string name="library.survey.open">Delta i undersøkelsen</string>
     <string name="library.survey.title">Vær med på å forme Shelf Audio</string>
+    <string name="listening_report.empty">Ingen historier ennå</string>
+    <string name="listening_report.finished">Hørt ferdig</string>
+    <string name="listening_report.summary">Tid og bøker, i dag og denne uken</string>
+    <string name="listening_report.title">Lytteoversikt</string>
     <string name="media_session.library.recent">Nylig</string>
     <string name="media_session.library.root">Alle lydbøker</string>
     <string name="onboarding.action.next">Neste</string>

@@ -303,6 +303,10 @@
     <string name="library.survey.message">Unas preguntas rápidas ayudan a decidir los próximos pasos.</string>
     <string name="library.survey.open">Responder la encuesta</string>
     <string name="library.survey.title">Ayuda a dar forma a Shelf Audio</string>
+    <string name="listening_report.empty">Aún no hay historias</string>
+    <string name="listening_report.finished">Escuchado hasta el final</string>
+    <string name="listening_report.summary">Tiempo y libros, hoy y esta semana</string>
+    <string name="listening_report.title">Resumen de escucha</string>
     <string name="media_session.library.recent">Recientes</string>
     <string name="media_session.library.root">Todos los audiolibros</string>
     <string name="onboarding.action.next">Siguiente</string>

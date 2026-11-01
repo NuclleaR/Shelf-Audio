@@ -286,6 +286,10 @@
     <string name="library.survey.message">कुछ छोटे सवाल यह तय करने में मदद करते हैं कि आगे क्या आएगा।</string>
     <string name="library.survey.open">सर्वे में हिस्सा लें</string>
     <string name="library.survey.title">Shelf Audio को आकार देने में मदद करें</string>
+    <string name="listening_report.empty">अभी तक कोई कहानी नहीं</string>
+    <string name="listening_report.finished">पूरी सुनी गई</string>
+    <string name="listening_report.summary">समय और पुस्तकें, आज और इस सप्ताह</string>
+    <string name="listening_report.title">सुनने का सारांश</string>
     <string name="media_session.library.recent">हालिया</string>
     <string name="media_session.library.root">सभी ऑडियोबुक</string>
     <string name="onboarding.action.next">अगला</string>

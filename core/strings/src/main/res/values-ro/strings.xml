@@ -303,6 +303,10 @@
     <string name="library.survey.message">Câteva întrebări rapide ne ajută să decidem ce urmează.</string>
     <string name="library.survey.open">Completează sondajul</string>
     <string name="library.survey.title">Ajută-ne să îmbunătățim Shelf Audio</string>
+    <string name="listening_report.empty">Încă nicio poveste</string>
+    <string name="listening_report.finished">Ascultată până la capăt</string>
+    <string name="listening_report.summary">Timp și cărți, azi și săptămâna aceasta</string>
+    <string name="listening_report.title">Rezumatul ascultării</string>
     <string name="media_session.library.recent">Recente</string>
     <string name="media_session.library.root">Toate cărțile audio</string>
     <string name="onboarding.action.next">Mai departe</string>

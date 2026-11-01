@@ -286,6 +286,10 @@
     <string name="library.survey.message">Λίγες σύντομες ερωτήσεις βοηθούν να αποφασιστεί τι θα ακολουθήσει.</string>
     <string name="library.survey.open">Συμμετοχή στην έρευνα</string>
     <string name="library.survey.title">Βοηθήστε να διαμορφωθεί το Shelf Audio</string>
+    <string name="listening_report.empty">Καμία ιστορία ακόμα</string>
+    <string name="listening_report.finished">Ακούστηκε ως το τέλος</string>
+    <string name="listening_report.summary">Χρόνος και βιβλία, σήμερα και αυτή την εβδομάδα</string>
+    <string name="listening_report.title">Σύνοψη ακρόασης</string>
     <string name="media_session.library.recent">Πρόσφατα</string>
     <string name="media_session.library.root">Όλα τα ηχητικά βιβλία</string>
     <string name="onboarding.action.next">Επόμενο</string>

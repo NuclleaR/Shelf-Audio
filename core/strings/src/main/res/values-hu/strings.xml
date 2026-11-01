@@ -286,6 +286,10 @@
     <string name="library.survey.message">Néhány gyors kérdés segít eldönteni, mi jöjjön ezután.</string>
     <string name="library.survey.open">Kérdőív kitöltése</string>
     <string name="library.survey.title">Segítsen alakítani a Shelf Audio-t</string>
+    <string name="listening_report.empty">Még nincsenek történetek</string>
+    <string name="listening_report.finished">Végighallgatva</string>
+    <string name="listening_report.summary">Idő és könyvek, ma és ezen a héten</string>
+    <string name="listening_report.title">Hallgatási összesítő</string>
     <string name="media_session.library.recent">Legutóbbiak</string>
     <string name="media_session.library.root">Összes hangoskönyv</string>
     <string name="onboarding.action.next">Tovább</string>

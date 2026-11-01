@@ -269,6 +269,10 @@
     <string name="library.survey.message">回答几个简单的问题，帮助我们决定接下来做什么。</string>
     <string name="library.survey.open">参与调查</string>
     <string name="library.survey.title">一起打造 Shelf Audio</string>
+    <string name="listening_report.empty">还没有故事</string>
+    <string name="listening_report.finished">已听完</string>
+    <string name="listening_report.summary">今天和本周的收听时长与书籍</string>
+    <string name="listening_report.title">收听报告</string>
     <string name="media_session.library.recent">最近</string>
     <string name="media_session.library.root">所有有声书</string>
     <string name="onboarding.action.next">下一步</string>

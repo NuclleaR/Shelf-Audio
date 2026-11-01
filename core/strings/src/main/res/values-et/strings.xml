@@ -286,6 +286,10 @@
     <string name="library.survey.message">Paar kiiret küsimust aitavad otsustada, mis järgmiseks tuleb.</string>
     <string name="library.survey.open">Vasta küsitlusele</string>
     <string name="library.survey.title">Aita Shelf Audio\'i kujundada</string>
+    <string name="listening_report.empty">Lugusid veel pole</string>
+    <string name="listening_report.finished">Lõpuni kuulatud</string>
+    <string name="listening_report.summary">Aeg ja raamatud, täna ja sel nädalal</string>
+    <string name="listening_report.title">Kuulamise ülevaade</string>
     <string name="media_session.library.recent">Viimati kuulatud</string>
     <string name="media_session.library.root">Kõik heliraamatud</string>
     <string name="onboarding.action.next">Edasi</string>

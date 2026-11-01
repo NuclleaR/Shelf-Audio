@@ -286,6 +286,10 @@
     <string name="library.survey.message">Unas cantas preguntas lestras agiudant a detzìdere ite fàghere a pustis.</string>
     <string name="library.survey.open">Faghe su sondàgiu</string>
     <string name="library.survey.title">Agiuda a dare forma a Shelf Audio</string>
+    <string name="listening_report.empty">Galu peruna istòria</string>
+    <string name="listening_report.finished">Ascurtadu finas a s\'acabbu</string>
+    <string name="listening_report.summary">Tempus e libros, oe e custa chida</string>
+    <string name="listening_report.title">Resumu de s\'ascurtu</string>
     <string name="media_session.library.recent">Reghentes</string>
     <string name="media_session.library.root">Totu sos audiolibros</string>
     <string name="onboarding.action.next">Sighi</string>
