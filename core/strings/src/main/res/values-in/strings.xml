@@ -269,6 +269,10 @@
     <string name="library.survey.message">Beberapa pertanyaan singkat membantu menentukan langkah selanjutnya.</string>
     <string name="library.survey.open">Ikuti survei</string>
     <string name="library.survey.title">Bantu kembangkan Shelf Audio</string>
+    <string name="listening_report.empty">Belum ada cerita</string>
+    <string name="listening_report.finished">Selesai didengarkan</string>
+    <string name="listening_report.summary">Waktu dan buku, hari ini dan minggu ini</string>
+    <string name="listening_report.title">Ringkasan mendengarkan</string>
     <string name="media_session.library.recent">Terbaru</string>
     <string name="media_session.library.root">Semua buku audio</string>
     <string name="onboarding.action.next">Berikutnya</string>

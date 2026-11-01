@@ -286,6 +286,10 @@
     <string name="library.survey.message">Birkaç kısa soru, sırada ne olacağına karar vermeye yardımcı olur.</string>
     <string name="library.survey.open">Ankete katıl</string>
     <string name="library.survey.title">Shelf Audio\'u birlikte şekillendirelim</string>
+    <string name="listening_report.empty">Henüz hikâye yok</string>
+    <string name="listening_report.finished">Sonuna kadar dinlendi</string>
+    <string name="listening_report.summary">Süre ve kitaplar, bugün ve bu hafta</string>
+    <string name="listening_report.title">Dinleme özeti</string>
     <string name="media_session.library.recent">Son açılanlar</string>
     <string name="media_session.library.root">Tüm sesli kitaplar</string>
     <string name="onboarding.action.next">Sonraki</string>

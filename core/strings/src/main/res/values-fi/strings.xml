@@ -286,6 +286,10 @@
     <string name="library.survey.message">Muutama nopea kysymys auttaa päättämään, mitä tehdään seuraavaksi.</string>
     <string name="library.survey.open">Vastaa kyselyyn</string>
     <string name="library.survey.title">Auta kehittämään Shelf Audiota</string>
+    <string name="listening_report.empty">Ei vielä tarinoita</string>
+    <string name="listening_report.finished">Kuunneltu loppuun</string>
+    <string name="listening_report.summary">Aika ja kirjat, tänään ja tällä viikolla</string>
+    <string name="listening_report.title">Kuuntelun yhteenveto</string>
     <string name="media_session.library.recent">Viimeksi kuunnellut</string>
     <string name="media_session.library.root">Kaikki äänikirjat</string>
     <string name="onboarding.action.next">Seuraava</string>

@@ -286,6 +286,10 @@
     <string name="library.survey.message">Några snabba frågor hjälper till att avgöra vad som kommer härnäst.</string>
     <string name="library.survey.open">Svara på enkäten</string>
     <string name="library.survey.title">Var med och forma Shelf Audio</string>
+    <string name="listening_report.empty">Inga berättelser än</string>
+    <string name="listening_report.finished">Lyssnad till slutet</string>
+    <string name="listening_report.summary">Tid och böcker, i dag och den här veckan</string>
+    <string name="listening_report.title">Lyssningsöversikt</string>
     <string name="media_session.library.recent">Senast spelade</string>
     <string name="media_session.library.root">Alla ljudböcker</string>
     <string name="onboarding.action.next">Nästa</string>

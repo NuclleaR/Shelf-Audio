@@ -286,6 +286,10 @@
     <string name="library.survey.message">Неколку кратки прашања помагаат да се одлучи што следува.</string>
     <string name="library.survey.open">Пополни ја анкетата</string>
     <string name="library.survey.title">Помогнете да се обликува Shelf Audio</string>
+    <string name="listening_report.empty">Сè уште нема приказни</string>
+    <string name="listening_report.finished">Сослушана до крај</string>
+    <string name="listening_report.summary">Време и книги, денес и оваа недела</string>
+    <string name="listening_report.title">Преглед на слушањето</string>
     <string name="media_session.library.recent">Скорешни</string>
     <string name="media_session.library.root">Сите аудио книги</string>
     <string name="onboarding.action.next">Следно</string>

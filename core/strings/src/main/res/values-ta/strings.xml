@@ -286,6 +286,10 @@
     <string name="library.survey.message">சில சிறு கேள்விகள் அடுத்து என்ன வர வேண்டும் என்பதைத் தீர்மானிக்க உதவும்.</string>
     <string name="library.survey.open">கருத்துக்கணிப்பில் பங்கேற்கவும்</string>
     <string name="library.survey.title">Shelf Audio-ஐ வடிவமைக்க உதவுங்கள்</string>
+    <string name="listening_report.empty">இன்னும் கதைகள் இல்லை</string>
+    <string name="listening_report.finished">முழுவதும் கேட்டு முடிந்தது</string>
+    <string name="listening_report.summary">நேரமும் புத்தகங்களும், இன்றும் இந்த வாரமும்</string>
+    <string name="listening_report.title">கேட்டதன் சுருக்கம்</string>
     <string name="media_session.library.recent">அண்மையவை</string>
     <string name="media_session.library.root">அனைத்து ஆடியோபுக்குகள்</string>
     <string name="onboarding.action.next">அடுத்து</string>

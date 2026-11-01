@@ -320,6 +320,10 @@
     <string name="library.survey.message">Несколько коротких вопросов помогут решить, что будет дальше.</string>
     <string name="library.survey.open">Пройти опрос</string>
     <string name="library.survey.title">Помогите развивать Shelf Audio</string>
+    <string name="listening_report.empty">Пока ни одной истории</string>
+    <string name="listening_report.finished">Дослушана до конца</string>
+    <string name="listening_report.summary">Время и книги за сегодня и эту неделю</string>
+    <string name="listening_report.title">Отчёт о прослушивании</string>
     <string name="media_session.library.recent">Недавние</string>
     <string name="media_session.library.root">Все аудиокниги</string>
     <string name="onboarding.action.next">Далее</string>

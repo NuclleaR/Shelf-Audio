@@ -303,6 +303,10 @@
     <string name="library.survey.message">כמה שאלות קצרות יעזרו להחליט מה יבוא בהמשך.</string>
     <string name="library.survey.open">מילוי הסקר</string>
     <string name="library.survey.title">עזרו לעצב את Shelf Audio</string>
+    <string name="listening_report.empty">עדיין אין סיפורים</string>
+    <string name="listening_report.finished">נשמע עד הסוף</string>
+    <string name="listening_report.summary">זמן וספרים, היום והשבוע</string>
+    <string name="listening_report.title">סיכום האזנה</string>
     <string name="media_session.library.recent">אחרונים</string>
     <string name="media_session.library.root">כל הקולספרים</string>
     <string name="onboarding.action.next">הבא</string>
